@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="pdi.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>PDI</title>
+</head>
+
+<div class="pdi-form">
+  
+  <body>
+    <input class="logo" type="image" id="image" alt="GCC-logo"
+       src="images/Grace-full-logo-Transparent-background-white-ICON.png">
+
+      <h1 class="title">Personal Data Inventory</h1>
+        <hr>
+      <h3>Please complete this form carefully</h3>
+        <hr>
+
+  <form name="PDI" id="pdiForm" action="mailto:craig@craighanson.com" enctype="multipart/form-data" method="POST" >  
+    <div class="aligned"> 
+    <div class="name">
+          <label for="name">Name</label>
+            <input type="text" onkeypress="return noenter()" name="name" id="name" required> 
+    </div>
+  
+    <div class="email">
+          <label for="email">Email</label>
+            <input type="email" onkeypress="return noenter()" name="email" id="email" required> 
+    </div>
+  
+    <div class="phone">
+          <label for="phone">Phone</label>
+            <input type="tel" onkeypress="return noenter()" name="phone" id="phone" required> 
+    </div>
+
+    <div class="business-phone">
+          <label for="business-phone">Work #</label>
+            <input type="tel" onkeypress="return noenter()" name="business-phone" id="business-phone"> 
+    </div>
+    <div class="address">
+      <label for="Address">Street</label>
+        <input type="text" onkeypress="return noenter()" name="address" id="address" required> 
+</div>
+<div class="city">
+  <label for="city">City</label>
+    <input type="text" onkeypress="return noenter()" name="city" id="city" required> 
+</div>
+<div class="state">            
+  <label for="Address">State</label>
+    <select onkeypress="return noenter()" name="state" id="state">  
+    <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+      <option value="CA">California</option>
+      <option value="CO">Colorado</option>
+      <option value="CT">Connecticut</option>
+      <option value="DE">Delaware</option>
+      <option value="DC">District Of Columbia</option>
+      <option value="FL">Florida</option>
+      <option value="GA">Georgia</option>
+      <option value="HI">Hawaii</option>
+      <option value="ID">Idaho</option>
+      <option value="IL">Illinois</option>
+      <option value="IN">Indiana</option>
+      <option value="IA">Iowa</option>
+      <option value="KS">Kansas</option>
+      <option value="KY">Kentucky</option>
+      <option value="LA">Louisiana</option>
+      <option value="ME">Maine</option>
+      <option value="MD">Maryland</option>
+      <option value="MA">Massachusetts</option>
+      <option value="MI">Michigan</option>
+      <option value="MN">Minnesota</option>
+      <option value="MS">Mississippi</option>
+      <option value="MO">Missouri</option>
+      <option value="MT">Montana</option>
+      <option value="NE">Nebraska</option>
+      <option value="NV">Nevada</option>
+      <option value="NH">New Hampshire</option>
+      <option value="NJ">New Jersey</option>
+      <option value="NM">New Mexico</option>
+      <option value="NY">New York</option>
+      <option value="NC">North Carolina</option>
+      <option value="ND">North Dakota</option>
+      <option value="OH">Ohio</option>
+      <option value="OK">Oklahoma</option>
+      <option value="OR">Oregon</option>
+      <option value="PA">Pennsylvania</option>
+      <option value="RI">Rhode Island</option>
+      <option value="SC">South Carolina</option>
+      <option value="SD">South Dakota</option>
+      <option selected value="TN">Tennessee</option>
+      <option value="TX">Texas</option>
+      <option value="UT">Utah</option>
+      <option value="VT">Vermont</option>
+      <option value="VA">Virginia</option>
+      <option value="WA">Washington</option>
+      <option value="WV">West Virginia</option>
+      <option value="WI">Wisconsin</option>
+      <option value="WY">Wyoming</option>
+    </select> 
+</div>
+<div class="zipcode">
+  <label for="zipcode">Zip</label>
+    <input type="text" onkeypress="return noenter()" name="zipcode" id="zipcode" required> 
+</div>
+    <div class="age">
+          <label for="age">Age</label>
+            <input type="number" onkeypress="return noenter()" name="age" id="age" min="5" max="100"> 
+    </div>
+      <br>
+    <div class="birthdate">
+          <label for="date">Birth Date</label>
+            <input type="date" onkeypress="return noenter()" name="date" id="date" min="1910-10-20" max="2015-10-20"> 
+    </div>
+  </div>
+      <br>
+    <div class="sex">
+    You are ...  
+      <br>
+      <br>
+      <div class="male-radio">
+          
+            <input type="radio" onkeypress="return noenter()" name="sex" id="male" value="male">
+            <label for="male">Male</label>
+      </div>
+      <div class="female-radio">
+          
+            <input type="radio" onkeypress="return noenter()" name="sex" id="female" value="female">
+            <label for="female">Female</label>
+          <br>
+          <br>  
+<div class="women-only">
+  <hr class="hr-women-only">
+<h2>Women Only</h2>
+
+  <div>Have you had any menstrual difficulties?
+    
+    <input type="radio" onkeypress="return noenter()" name="menstrual" id="menstrual-yes" value="menstrual-yes"> 
+    <label for="menstrual-yes">Yes</label>
+
+    <input type="radio" onkeypress="return noenter()" name="menstrual" id="menstrual-no" value="menstrual-no">
+    <label for="menstrual-no">No</label>  
+
+  </div>
+  <br>
+<div>If you experience tension, tendency to cry, or other symptoms prior to your cycle, please explain:</div>
+<br>
+<textarea class="menstrual-difficulties" name="menstrual-difficulties" id="menstrual-difficulties" cols="62" rows="4"></textarea>
+<br>
+  <br>
+  <div>Is your husband willing to come for counseling?
+    
+    <input type="radio" onkeypress="return noenter()" name="husband-willing" id="husband-willing-yes" value="husband-willing-yes"> 
+    <label for="husband-willing-yes">Yes</label>
+
+    <input type="radio" onkeypress="return noenter()" name="husband-willing" id="husband-willing-no" value="husband-willing-no">
+    <label for="husband-willing-no">No</label>
+  </div>
+    <br>
+  <div>Is he in favor of you coming?
+    
+    <input type="radio" onkeypress="return noenter()" name="husband-in-favor" id="husband-in-favor-yes" value="husband-in-favor-yes"> 
+    <label for="husband-in-favor-yes">Yes</label>
+    
+    <input type="radio" onkeypress="return noenter()" name="husband-in-favor" id="husband-in-favor-no" value="husband-in-favor-no">
+    <label for="husband-in-favor-no">No</label>
+
+    <br>
+    <br>
+    <div>If no, please explain:</div>
+    <br>
+    <textarea class="husband-in-favor-textarea" name="husband-in-favor-explanation" id="husband-in-favor-explanation" cols="62" rows="4"></textarea>
+    <br>
+    <br>
+    <hr class="hr-women-only">
+      </div>
+    </div>
+    </div>
+</div>
+    <div class="occupation">
+          <label for="occupation">Occupation</label>
+            <input type="text" onkeypress="return noenter()" name="occupation" id="occupation"> 
+    </div>
+    
+        <div>
+          <label for="education">Education</label>
+            <select name="education" id="education">
+              <option value="" disabled selected>Choose one</option>
+              <option value="elementary">Elementary</option>
+              <option value="high-school">High School</option>
+              <option value="GED">GED</option>
+              <option value="college">College</option>
+              <option value="graduate">Graduate</option>
+            </select>
+        </div>
+    <div>
+          <label for="degree">Degree</label>
+            <input type="text" onkeypress="return noenter()" name="degree" id="degree"> 
+    </div>
+  
+    <br>
+    <div>Other Training (List Type and years)</div>
+      <br>
+      <div>
+          <textarea name="other-training" id="other-training" cols="62" rows="4"></textarea>
+        </div>
+          <br>
+    
+    <div>Hobbies</div>
+    <br>
+    <textarea name="hobbies" id="hobbies" cols="62" rows="4"></textarea>
+    
+    <br>
+    <br>
+    
+    <div>If you were raised by anyone other than your own parents, please explain:</div>
+    <br>
+      <textarea name="other-training" onkeypress="return noenter()" id="other-training" cols="62" rows="4"></textarea>
+    
+      <br>
+      <br>
+    
+      <div class="siblings">Do you have siblings?
+        <br>
+        <br>
+        <div class="no-siblings-radio">
+          
+            <input type="radio" onkeypress="return noenter()" name="siblings" id="no-siblings" value="no-siblings">
+            <label for="no-siblings">No</label>
+      </div>
+      <div class="yes-siblings-radio">
+          
+            <input type="radio" onkeypress="return noenter()" name="siblings" id="yes-siblings" value="yes-siblings">
+            <label for="yes-siblings">Yes</label>
+<br>
+<br>
+            <div class="siblings-order">
+              <label for="older-brothers">Older ... Brothers</label>
+              <input type="number" onkeypress="return noenter()" name="older-brothers" id="older-brothers" min="0" max="20"> 
+              <label for="age">Sisters</label>
+              <input type="number" onkeypress="return noenter()" name="older-sisters" id="older-sisters" min="0" max="20"> 
+            <br>
+            <br>
+              <label for="age">Younger ... Brothers</label>
+              <input type="number" onkeypress="return noenter()" name="younger=brothers" id="younger-brothers" min="0" max="20"> 
+              <label for="age">Sisters</label>
+              <input type="number" onkeypress="return noenter()" name="younger-sisters" id="younger-sisters" min="0" max="20"> 
+            </div>
+      </div>
+    </div>  
+    <br>
+    <br>
+    <hr>
+    <!-- <div class="marriage-and-family"> -->
+
+    <h2>Marriage</h2>
+    Are you married? 
+    <br>
+    <br>
+    <div class="no-married">
+      
+        <input type="radio" onkeypress="return noenter()" name="married" id="no-married" value="no-married">
+        <label for="no-married">No</label>
+
+        <div class="marital-status">
+          <label for="marital-status"></label>
+            <select name="marital-status" id="marital-status">
+              <option value="" disabled selected hidden >Choose one</option>
+              <option value="engaged">Engaged</option>
+              <option value="single">Single</option> 
+              <option value="divorced">Divorced</option>
+              <option value="widow">Widow</option>
+            </select>
+    </div>  
+  </div> 
+  <div class="yes-married">
+      
+        <input type="radio" onkeypress="return noenter()" name="married" id="yes-married" value="yes-married">
+        <label for="yes-married">Yes</label>
+
+        <div id="marriage-options">
+          <br>
+          <div>
+            <label for="marriage-date">Date of Marriage</label>
+            <input type="date" onkeypress="return noenter()" name="marriage-date" id="marriage-date" min="1910-10-20" max="2020-10-20"> 
+          </div>
+          <br>    
+          <div>
+                  <label for="spouse">Spouse</label>
+                  <input type="text" onkeypress="return noenter()" name="spouse" id="spouse"> 
+                </div>
+                <div>
+                  <label for="spouse-birth-date">Birth Date</label>
+                  <input type="date" onkeypress="return noenter()" name="spouse-birth-date" id="spouse-birth-date" min="1910-10-20" max="2015-10-20"> 
+                </div>
+                <div>
+                  <label for="spouse-occupation">Occupation</label>
+                  <input type="text" onkeypress="return noenter()" name="spouse-occupation" id="spouse-occupation"> 
+                </div>
+                <div>
+                  <label for="employed-length">How long employed?</label>
+                  <input type="text" onkeypress="return noenter()" name="employed-length" id="employed-length"> 
+                </div>
+                <br>
+                <div>Length of dating:
+                <label for="years-dating">Years</label>
+                <input type="number" onkeypress="return noenter()" name="years-dating" id="years-dating" min="0" max="50"> 
+                <label for="age">Months</label>
+                <input type="number" onkeypress="return noenter()" name="months-dating" id="months-dating" min="0" max="11"> 
+              </div>
+          <br>
+                <div>Give a brief statement of circumstances of meeting and dating:</div>
+                <br>
+                <textarea name="dating" onkeypress="return noenter()" id="dating" cols="62" rows="4"></textarea>
+          <br>
+          <br>
+                <div>
+                  Have either of you been previously married?
+                  <br>
+                  <br>
+                  <input type="radio" onkeypress="return noenter()" name="previously-married" id="previously-married-no" value="previously-married-no">
+                  <label for="previously-married-no">No</label>
+                  <br>
+                  <input type="radio" onkeypress="return noenter()" 
+                  name="previously-married" id="previously-married-yes" value="previously-married-yes"> 
+                  <label for="previously-married-yes">Yes</label>
+                </div>
+                <br>
+                <div>
+                  Have you ever been separated?
+                  <br>
+                  <br>
+                  <input type="radio" onkeypress="return noenter()" name="separated" id="separated-no" value="separated-no">
+                  <label for="separated-no">No</label>
+                  <br>
+                  <input type="radio" onkeypress="return noenter()" name="separated" id="separated-yes" value="separated-yes"> 
+                  <label for="separated-yes">Yes</label>
+                </div>
+                <br>
+                <div>
+                  Filed for divorce?
+                  <br>
+                  <br>
+                  <input type="radio" onkeypress="return noenter()" name="divorce" id="filed-divorce-no" value="filed-divorce-no">
+                  <label for="filed-divorce-no">No</label>
+                  <br>
+                  <input type="radio" onkeypress="return noenter()" name="divorce" id="filed-divorce-yes" value="filed-divorce-yes"> 
+                  <label for="filed-divorce-yes">Yes</label>
+                </div>
+              </div>
+            </div>
+      <br>
+      <br>
+      <hr>
+<h2>Children and Family</h2>
+        <div>Please complete for each child</div>
+
+      <br>
+      <div class="kids-container">
+        <div id="kid-one">
+        <label for="kid">Name</label>
+        <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+        <label for="kid-age">Age</label>
+        <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+        Living?
+        <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label> 
+        <select name="kidStatus" id="kidStatus">
+          <option value="" disabled selected hidden >Choose one</option>
+          <option value="biological">Biological</option> 
+          <option value="stepKid">Step-child</option>
+          <option value="adopted">Adopted</option>
+        </select>
+        </div>
+        <div id="kid-two">
+          <label for="kid">Name</label>
+          <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+          <label for="kid-age">Age</label>
+          <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+          Living?
+          <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label> 
+          <select name="kidStatus" id="kidStatus">
+            <option value="" disabled selected hidden >Choose one</option>
+            <option value="biological">Biological</option> 
+            <option value="stepKid">Step-child</option>
+            <option value="adopted">Adopted</option>
+          </select>
+          </div>
+          <div id="kid-three">
+            <label for="kid">Name</label>
+            <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+            <label for="kid-age">Age</label>
+            <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+            Living?
+          
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label>
+
+            <select name="kidStatus" id="kidStatus">
+              <option value="" disabled selected hidden >Choose one</option>
+              <option value="biological">Biological</option> 
+              <option value="stepKid">Step-child</option>
+              <option value="adopted">Adopted</option>
+            </select>
+            </div>
+            <div id="kid-four">
+              <label for="kid">Name</label>
+              <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+              <label for="kid-age">Age</label>
+              <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+              Living?
+              <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label> 
+              <select name="kidStatus" id="kidStatus">
+                <option value="" disabled selected hidden >Choose one</option>
+                <option value="biological">Biological</option> 
+                <option value="stepKid">Step-child</option>
+                <option value="adopted">Adopted</option>
+              </select>
+              </div>
+              <div id="kid-five">
+                <label for="kid">Name</label>
+                <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+                <label for="kid-age">Age</label>
+                <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+                Living?
+                <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label>  
+                <select name="kidStatus" id="kidStatus">
+                  <option value="" disabled selected hidden >Choose one</option>
+                  <option value="biological">Biological</option> 
+                  <option value="stepKid">Step-child</option>
+                  <option value="adopted">Adopted</option>
+                </select>
+                </div>
+                <div id="kid-six">
+                  <label for="kid">Name</label>
+                  <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+                  <label for="kid-age">Age</label>
+                  <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+                  Living?
+                  <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label>  
+                  <select name="kidStatus" id="kidStatus">
+                    <option value="" disabled selected hidden >Choose one</option>
+                    <option value="biological">Biological</option> 
+                    <option value="stepKid">Step-child</option>
+                    <option value="adopted">Adopted</option>
+                  </select>
+                  </div>
+                  <div id="kid-seven">
+                    <label for="kid">Name</label>
+                    <input type="text" onkeypress="return noenter()" name="kid" id="kid">
+                    <label for="kid-age">Age</label>
+                    <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+                    Living?
+                    <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+            <label for="kid-living-yes">Yes</label>
+
+            <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+            <label for="kid-living-no">No</label>  
+                    <select name="kidStatus" id="kidStatus">
+                      <option value="" disabled selected hidden >Choose one</option>
+                      <option value="biological">Biological</option> 
+                      <option value="stepKid">Step-child</option>
+                      <option value="adopted">Adopted</option>
+                    </select>
+                    </div>
+      </div>
+      
+        <br>
+        <div>Describe relationship to your father:</div>
+        <br>
+        <textarea name="relationship-father" id="relationship-father" cols="62" rows="4"></textarea>
+        <br>
+        <br>
+        <div>Describe relationship to your mother:</div>
+        <br>
+        <textarea name="relationship-mother" id="relationship-mother" cols="62" rows="4"></textarea>
+<br>
+<br>
+      
+    <hr>
+
+    <h2>Health</h2>
+  <div>Describe your health</div>
+<br>
+  <textarea name="health-description" id="health-description" cols="62" rows="4"></textarea>
+<br>
+<br>
+  <div>Do you have any chronic conditions?
+<br>
+<br>
+    <input type="radio" onkeypress="return noenter()" name="chronic" id="chronic-no" value="chronic-no">
+    <label for="chronic-no">No</label>
+    
+    <div class="chronic-yes">
+    <input type="radio" onkeypress="return noenter()" name="chronic" id="chronic-yes" value="chronic-yes">
+    <label for="chronic-yes">Yes</label>
+<br>
+<br>
+    <div class="chronic-description">Please explain:
+<br>
+<br>
+    <textarea name="chronic-description" id="chronic-description" cols="62" rows="4"></textarea>
+  </div>
+  </div> 
+  </div>
+<br>
+<br>
+    <div>
+      <label for="medical-exam-date">Date of Last Medical Exam</label>
+      <input type="date" onkeypress="return noenter()" name="medical-exam-date" id="medical-exam-date" min="1910-10-20" max="2020-10-20"> 
+    </div>
+<br>  
+  <div>Report:</div>
+<br>
+  <textarea name="medical-report" id="medical-report" cols="62" rows="4"></textarea>
+<br>
+<br>
+  <div>Current medication(s) and dosage:</div>
+<br>
+  <textarea name="medical-report" id="medical-report" cols="62" rows="4"></textarea>
+  <br>
+  <br>
+Have you ever used drugs for anything other than medical purposes?
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="non-medical-drugs" id="non-medical-drugs-no" value="non-medical-drugs-no">
+
+      <label for="non-medical-drugs-no">No</label>
+    
+      <div class="non-medical-drugs-yes">
+    <input type="radio" onkeypress="return noenter()" name="non-medical-drugs" id="non-medical-drugs-yes" value="non-medical-drugs-yes"> 
+    <label for="non-medical-drugs-yes">Yes</label>
+    <br>
+    <br>
+    <div class="non-medical-explanation">Please explain:
+      <br>
+      <br>
+        <textarea name="non-medical-explanation" id="non-medical-explanation" cols="62" rows="4"></textarea>
+      </div>
+  </div>
+<br>
+<div>Have you ever been arrested?
+  <br>
+  <br>
+  <input type="radio" onkeypress="return noenter()" name="arrested" id="arrested-no" value="arrested-no">
+  <label for="arrested-no">No</label>
+  <br>
+  <input type="radio" onkeypress="return noenter()" name="arrested" id="arrested-yes" value="arrested-yes"> 
+  <label for="arrested-yes">Yes</label>
+  
+</div>
+<br>
+<div>Do you drink alcoholic beverages?
+  <br>
+  <br>
+  <input type="radio" onkeypress="return noenter()" name="alcohol" id="alcohol-no" value="alcohol-no">
+  <label for="arrested-no">No</label>
+  <div class="alcohol-yes">
+  <input type="radio" onkeypress="return noenter()" name="alcohol" id="alcohol-yes" value="alcohol-yes">
+  <label for="alcohol-yes">Yes</label>
+  <br>
+  <br>
+  <div class="alcohol-explanation">
+    How frequently and how much?
+  <br>
+  <br>
+    <textarea  name="alcohol-explanation" id="alcohol-explanation" cols="62" rows="4"></textarea>  
+    <br>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+    <div>Do you drink coffee and/or other caffeine drinks?
+      <br>
+      <br>
+      
+  <input type="radio" onkeypress="return noenter()" name=caffeine id="caffeine-no" value="caffeine-no">
+  <label for="arrested-no">No</label>
+  <div class="caffeine-yes">    
+  <input type="radio" onkeypress="return noenter()" name="caffeine" id="caffeine-yes" value="caffeine-yes"> 
+  <label for="caffeine-yes">Yes</label>
+  <br>
+  <br>
+  <div class="caffeine-explanation">How frequently and how much?
+    <br>
+    <br>
+         <textarea name="caffeine-explanation" id="caffeine-explanation" cols="62" rows="4"></textarea>
+       </div> 
+</div>
+<br>
+  </div>
+      <br>
+  <div>Do you smoke?
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="smoke" id="smoke-no" value="smoke-no">
+    <label for="smoke-no">No</label>
+    <div class="smoke-yes">
+    <input type="radio" onkeypress="return noenter()" name="smoke" id="smoke-yes" value="smoke-yes">
+    <label for="smoke-yes">Yes</label> 
+<br>
+<br>
+<div class="smoking-explanation">
+<div>What? Frequency?</div>
+<br>
+<textarea name="smoking-explanation" id="smoking-explanation" cols="62" rows="4"></textarea>
+</div>
+</div>
+</div>
+      <br>
+      <br>
+
+<div>Have you ever had interpersonal problems on the job?
+  <br>
+  <br>
+  <input type="radio" onkeypress="return noenter()" name="interpersonal" id="interpersonal-no" value="interpersonal-no">
+  <label for="interpersonal-no">No</label>
+  <br>
+  <input type="radio" onkeypress="return noenter()" name="interpersonal" id="interpersonal-yes" value="interpersonal-yes"> 
+  <label for="interpersonal-yes">Yes</label>
+</div>
+<br>
+
+  <div>Have you ever had a severe emotional upset?
+    <br>
+    <br> 
+    <input type="radio" onkeypress="return noenter()" name="emotional" id="emotional-no" value="emotional-no">
+    <label for="interpersonal-no">No</label>
+    <div class="emotional-yes">
+    <input type="radio" onkeypress="return noenter()" name="emotional" id="emotional-yes" value="emotional-yes">
+    <label for="emotional-yes">Yes</label> 
+    <br>
+    <br>
+    <div class="emotional-explanation">
+    <div>Please explain:</div>
+    <br>   
+    <textarea name="emotional-explanation" id="emotional-explanation" cols="62" rows="4"></textarea>
+  </div>
+  </div>
+  </div>
+    <br>
+  <br>
+Have you ever seen a psychiatrist or a counselor? 
+  <br>
+  <br>
+  
+  <input type="radio" onkeypress="return noenter()" name="psychiatrist" id="psychiatrist-no" value="psychiatrist-no">
+  <label for="psychiatrist-no">No</label>
+  <div class="psychiatrist-yes">
+  
+  <input type="radio" onkeypress="return noenter()" name="psychiatrist" id="psychiatrist-yes" value="psychiatrist-yes"> 
+  <label for="psychiatrist-yes">Yes</label>
+  <br>
+  <br>
+  <div class="psychiatrist-explanation">
+    Please explain:
+    <br>
+      <br>
+      <textarea name="psychiatrist-explanation" id="psychiatrist-explanation" cols="62" rows="4"></textarea>
+    </div>
+</div>
+
+  <br>
+  
+<br>
+<br>
+</Have>
+<hr>
+
+<h2>Religious</h2>
+
+  <div>
+    <label for="denomination">Denominational Preference:</label>
+    <input type="text" onkeypress="return noenter()" name="denomination" id="denomination"> 
+  </div>
+  <div>
+    <label for="church">Church attending:</label>
+    <input type="text" onkeypress="return noenter()" name="church" id="church">
+    <br>
+    Member? 
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="member" id="member-no" value="member-no">
+    <label for="member-no">No</label>
+    <br>
+      <input type="radio" onkeypress="return noenter()" name="member" id="member-yes" value="member-yes"> 
+      <label for="member-yes">Yes</label>
+      <br>
+      <br>
+    </div>
+    <div>
+      <label for="attendance">Church attendance per month:</label>
+      <input type="number" onkeypress="return noenter()" name="attendance" id="attendance" min="0" max="20"> 
+    </div>
+  <br>
+
+  <div>Do you believe in God?
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="believe" id="believe-no" value="believe-no">
+    <label for="believe-no">No</label>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="believe" id="believe-yes" value="believe-yes"> 
+    <label for="believe-yes">Yes</label>
+  <br>  
+  </div>
+  <br>
+
+  <div>Do you pray?
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="pray" id="pray-no" value="pray-no">
+    <label for="pray-no">No</label>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="pray" id="pray-yes" value="pray-yes"> 
+    <label for="pray-yes">Yes</label>
+    <br>
+    </div>
+    <br>
+
+  <div>Would you say you are a Christian?
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="christian" id="christian-no" value="christian-no">
+    <label for="christian-no">No</label>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="christian" id="christian-yes" value="christian-yes"> 
+    <label for="christian-yes">Yes</label>
+    <br>  
+  </div>
+    <br>
+  <div>... or still in the process of becoming a Christian?</div>
+  <br>
+  <textarea name="in-process-explanation" id="in-process-explanation" cols="62" rows="4"></textarea>
+<br>
+<br>
+  <div>Have you been baptized?
+    <br>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="baptized" id="baptized-no" value="baptized-no">
+    <label for="baptized-no">No</label>
+    <br>
+    <input type="radio" onkeypress="return noenter()" name="baptized" id="baptized-yes" value="baptized-yes"> 
+    <label for="baptized-yes">Yes</label>
+    <br>  
+  </div>
+  <div>
+    <label for="bible-reading">How often do you read your Bible?</label>
+    <input type="text" onkeypress="return noenter()" name="bible-reading" id="bible-reading"> 
+  </div>
+  <br>
+  <div>Explain any recent changes in your religious life:</div>
+  <br>
+  <textarea name="recent-changes" id="recent-changes" cols="62" rows="4"></textarea>
+<br>
+<br>
+  <hr>
+
+<h2>Problem checklist</h2>
+<div class="problems">
+
+  <input type="number" onkeypress="return noenter()" name="anger-number" id="anger-number" min="0" max="3" value="0">
+  <label for="anger-number">Anger</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="anxiety" id="anxiety" min="0" max="3" value="0">
+  <label for="anxiety">Anxiety</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="apathy" id="apathy" min="0" max="3" value="0">
+  <label for="apathy">Apathy</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="appetite" id="appetite" min="0" max="3" value="0">
+  <label for="appetite">Appetite</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="bitterness" id="bitterness" min="0" max="3" value="0">
+  <label for="bitterness">Bitterness</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="change" id="change" min="0" max="3" value="0">
+  <label for="change">Change in Lifestyle</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="children2" id="children2" min="0" max="3" value="0">
+  <label for="children2">Children</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="communication" id="communication" min="0" max="3" value="0">
+  <label for="communication">Communication</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="conflict" id="conflict" min="0" max="3" value="0">
+  <label for="conflict">Conflict (fights)</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="deception" id="deception" min="0" max="3" value="0">
+  <label for="deception">Deception</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="decision-making" id="decision-making" min="0" max="3" value="0">
+  <label for="decision-making">Decision-making</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="depression" id="depression" min="0" max="3" value="0">
+  <label for="depression">Depression</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="drunkenness" id="drunkenness" min="0" max="3" value="0">
+  <label for="drunkenness">Drunkenness</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="envy" id="envy" min="0" max="3" value="0">
+  <label for="envy">Envy</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="fear" id="fear" min="0" max="3" value="0">
+  <label for="fear">Fear</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="finances" id="finances" min="0" max="3" value="0">
+  <label for="finances">Finances</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="gluttony" id="gluttony" min="0" max="3" value="0">
+  <label for="gluttony">Gluttony</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="guilt" id="guilt" min="0" max="3" value="0">
+  <label for="guilt">Guilt</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="health" id="health" min="0" max="3" value="0">
+  <label for="health">Health</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="homosexuality" id="homosexuality" min="0" max="3" value="0">
+  <label for="homosexuality">Homosexuality</label>
+  <br>  
+
+  <input type="number" onkeypress="return noenter()" name="impotence" id="impotence" min="0" max="3" value="0">
+  <label for="impotence">Impotence</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="in-laws" id="in-laws" min="0" max="3" value="0">
+  <label for="in-laws">In-laws</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="loneliness" id="loneliness" min="0" max="3" value="0">
+  <label for="loneliness">Loneliness</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="lust" id="lust" min="0" max="3" value="0">
+  <label for="lust">Lust</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="memory" id="memory" min="0" max="3" value="0">
+  <label for="memory">Memory</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="moodiness" id="moodiness" min="0" max="3" value="0">
+  <label for="moodiness">Moodiness</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="perfectionism" id="perfectionism" min="0" max="3" value="0">
+  <label for="perfectionism">Perfectionism</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="rebellion" id="rebellion" min="0" max="3" value="0">
+  <label for="rebellion">Rebellion</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="sex" id="Sex" min="0" max="3" value="0">
+  <label for="sex">Sex</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="sleep" id="sleep" min="0" max="3" value="0">
+  <label for="sleep">Sleep</label>
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="wife-abuse" id="wife-abuse" min="0" max="3" value="0">
+  <label for="wife-abuse">Wife abuse</label>
+  <br>
+  
+  <input type="number"onkeypress="return noenter()" name="vice" id="vice" min="0" max="3" value="0">
+  <label for="vice">A Vice: </label><input type="text" name="vice">
+  <br>
+  
+  <input type="number" onkeypress="return noenter()" name="problem-other" id="problem-other" min="0" max="3" value="0">
+  <label for="problem-other">Other: </label><input type="text" name="problem-other">
+  <br>
+
+</div>
+<hr>
+
+<h2>Briefly Answer the Following Questions</h2>
+<br>
+<div>What is your problem (what brings you here)?</div>
+<br>
+<textarea name="problem-description" id="problem-description" cols="62" rows="4"></textarea>
+<br>
+<br>
+<div>What have you done about the problem?</div>
+<br>
+<textarea name="what-has-been-done" id="what-has-been-done" cols="62" rows="4"></textarea>
+<br>
+<br>
+<div>What are your expectations from counseling?</div>
+<br>
+<textarea name="expectations" id="expectations" cols="62" rows="4"></textarea>
+<br>
+<br>
+<div>Is there any other information that we should know?</div>
+<br>
+<textarea name="other-info" id="other-info" cols="62" rows="4"></textarea>
+<br>
+<br>
+<div>
+  <label for="referred">Referred to us by:</label>
+  <input type="text" onkeypress="return noenter()" name="referred" id="referred">
+<br> 
+  <label for="relationship">Relationship:</label>
+  <input type="text" onkeypress="return noenter()" name="relationship" id="relationship"> 
+</div>
+<p><input type="SUBMIT" value="Submit"></p>
+</div>
+
+
+</form>
+
+
+
+</body>
+</html>

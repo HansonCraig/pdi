@@ -1,4 +1,8 @@
 /*base form styles */
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
 
 * {
 	font-size: 20px;
@@ -40,8 +44,7 @@ button {
 
 .logo {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .title {
@@ -74,6 +77,8 @@ body {
 	align-items: center;
 	-webkit-justify-content: center;
 	justify-content: center;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 header {
@@ -109,10 +114,12 @@ input[type='tel']:focus {
 
 input[type='number'] {
 	width: 3.5%;
+	margin: 0.4rem;
 }
 
 select {
 	width: 13%;
+	margin: 0.4rem;
 }
 
 label[for='male'],
@@ -325,4 +332,23 @@ label[for='no-married'] {
 .husband-in-favor-textarea:focus {
 	background-color: #ead3d7;
 	transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 0 auto;
+		height: 100%;
+	}
+	.pdi-form {
+		transform: scale(.75);
+		height: 100vh;
+	}
+	}
+
+	@media (max-width: 576px) {
+		.pdi-form {
+			transform: scale(.5);
+			height: 100vh;
+		}
+	}
 }

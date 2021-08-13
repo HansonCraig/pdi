@@ -13,14 +13,14 @@
   
   <body>
     <input class="logo" type="image" id="image" alt="GCC-logo"
-       src="images/Grace-full-logo-Transparent-background-white-ICON.png">
+       src="images/GCC-logo-submark-white200x100.png">
 
       <h1 class="title">Personal Data Inventory</h1>
         <hr>
       <h3>Please complete this form carefully</h3>
         <hr>
 
-  <form name="PDI" id="pdiForm" method="POST" data-netlify="true">  
+  <form name="PDI" id="pdiForm" enctype="multipart/form-data" method="POST" data-netlify="true">  
     <div class="aligned"> 
     <div class="name">
           <label for="name">Name</label>
@@ -292,15 +292,15 @@
           </div>
           <br>    
           <div>
-                  <label for="spouse">Spouse</label>
+                  <label for="spouse">Spouse's Name</label>
                   <input type="text" onkeypress="return noenter()" name="spouse" id="spouse"> 
                 </div>
                 <div>
-                  <label for="spouse-birth-date">Birth Date</label>
+                  <label for="spouse-birth-date">Spouse's Birth Date</label>
                   <input type="date" onkeypress="return noenter()" name="spouse-birth-date" id="spouse-birth-date" min="1910-10-20" max="2015-10-20"> 
                 </div>
                 <div>
-                  <label for="spouse-occupation">Occupation</label>
+                  <label for="spouse-occupation">Spouse's Occupation</label>
                   <input type="text" onkeypress="return noenter()" name="spouse-occupation" id="spouse-occupation"> 
                 </div>
                 <div>
@@ -760,7 +760,7 @@ Have you ever seen a psychiatrist or a counselor?
     <br>
   <div>... or still in the process of becoming a Christian?</div>
   <br>
-  <textarea name="in-process-explanation" id="in-process-explanation" cols="62" rows="4"></textarea>
+  <textarea name="in-process-explanation" id="in-process-explanation" placeholder="Please explain..." cols="62" rows="4"></textarea>
 <br>
 <br>
   <div>Have you been baptized?
@@ -786,6 +786,7 @@ Have you ever seen a psychiatrist or a counselor?
   <hr>
 
 <h2>Problem checklist</h2>
+<h4 class="issues-indication">Please indicate to what degree (on a scale of 0 to 3) the issues below affect you.</h4>
 <div class="problems">
 
   <input type="number" onkeypress="return noenter()" name="anger-number" id="anger-number" min="0" max="3" value="0">

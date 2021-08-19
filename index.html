@@ -24,7 +24,7 @@
       <h3>Please complete this form carefully</h3>
         <hr>
 
-    <form name="PDI" id="pdiForm" enctype="multipart/form-data" method="POST"     data-netlify="true">  
+    <form name="PDI" id="pdiForm" enctype="multipart/form-data" method="POST"     data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">  
       <div class="aligned"> 
         <div class="name">
           <label for="name">Name</label>
@@ -389,19 +389,19 @@
       <br>
       <div class="kids-container">
         
-        <div id="kid-one">
+        <div id="first-child">
           <label for="kid-one">Name</label>
-            <input type="text" onkeypress="return noenter()" name="kid-one" id="kid-one" placeholder="Eldest child">
-          <label for="kid-one-age">Age</label>
-            <input type="number" onkeypress="return noenter()" name="kid-one-age" id="kid-one-age" min="0" max="60">
+            <input type="text" onkeypress="return noenter()" name="first-child" id="first-child" placeholder="First child">
+          <label for="first-child-age">Age</label>
+            <input type="number" onkeypress="return noenter()" name="first-child-age" id="first-child-age" min="0" max="60">
         Living?
         
-        <input type="radio" onkeypress="return noenter()" name="kid-one-living" id="kid-one-living-yes">
-            <label for="kid-living-yes">Yes</label>
-            <input type="radio" onkeypress="return noenter()" name="kid-one-living" id="kid-one-living-no">  
-            <label for="kid-one-living-no">No</label> 
+        <input type="radio" onkeypress="return noenter()" name="first-child-living" id="first-child-living-yes">
+            <label for="first-child-yes">Yes</label>
+            <input type="radio" onkeypress="return noenter()" name="first-child-living" id="first-child-living-no">  
+            <label for="first-child-living-no">No</label> 
         
-            <select name="kidStatus" id="kidStatus">
+            <select name="first-child-status" id="first-child-status">
               <option value="" disabled selected hidden >Choose one</option>
               <option value="biological">Biological</option> 
               <option value="stepKid">Step-child</option>
@@ -409,19 +409,19 @@
           </select>
         </div>
         
-        <div id="kid-two">
-          <label for="kid">Name</label>
-          <input type="text" onkeypress="return noenter()" name="kid" id="kid-two" placeholder="Second child">
-          <label for="kid-two-age">Age</label>
-          <input type="number" onkeypress="return noenter()" name="kid-two-age" id="kid-two-age" min="0" max="60">
+        <div id="second-child">
+          <label for="second-child">Name</label>
+          <input type="text" onkeypress="return noenter()" name="second-child" id="second-child" placeholder="Second child">
+          <label for="second-child-age">Age</label>
+          <input type="number" onkeypress="return noenter()" name="second-child-age" id="second-child-age" min="0" max="60">
           Living?
           
-          <input type="radio" onkeypress="return noenter()" name="kid-two-living" id="kid-two-living-yes">
-            <label for="kid-two-living-yes">Yes</label>
-          <input type="radio" onkeypress="return noenter()" name="kid-two-living" id="kid-two-living-no">  
-            <label for="kid-two-living-no">No</label> 
+          <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-yes">
+            <label for="second-child-living-yes">Yes</label>
+          <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-no">  
+            <label for="second-child-living-no">No</label> 
           
-          <select name="kidStatus" id="kidStatus">
+          <select name="second-child-status" id="second-child-status">
             <option value="" disabled selected hidden >Choose one</option>
             <option value="biological">Biological</option> 
             <option value="stepKid">Step-child</option>

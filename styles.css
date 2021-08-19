@@ -137,6 +137,10 @@ label[for='female'] {
 	display: inline;
 }
 
+input[type='radio'] {
+	cursor: pointer;
+}
+
 .problems {
 	column-count: 3;
 	margin-left: 12%;
@@ -186,7 +190,7 @@ input[type='submit'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 675px;
+	margin-bottom: 550px;
 	width: 70%;
 	color: lightpink;
 }
@@ -194,6 +198,10 @@ input[type='submit'] {
 .hr-women-only {
 	border-top: 10px solid lightpink;
 	border-radius: 7px;
+}
+
+.siblings {
+	margin-bottom: 40px;
 }
 
 label[for='yes-siblings'],
@@ -212,13 +220,17 @@ label[for='no-siblings'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 50px;
+	margin-bottom: 170px;
 }
 
 label[for='yes-married'],
 label[for='no-married'] {
 	cursor: pointer;
 	display: inline;
+}
+
+.marriage-info {
+	margin-bottom: 40px;
 }
 
 #marriage-options {
@@ -231,16 +243,16 @@ label[for='no-married'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 800px;
+	margin-bottom: 725px;
 }
 
-.marital-status {
+.single-status {
 	opacity: 0;
 	max-height: 0;
 	overflow: hidden;
 }
 
-.no-married input[type='radio']:checked ~ .marital-status {
+.no-married input[type='radio']:checked ~ .single-status {
 	opacity: 1;
 	overflow: visible;
 	height: auto;

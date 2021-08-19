@@ -131,33 +131,8 @@ select {
 	margin: 0.4rem;
 }
 
-label[for='male'],
-label[for='female'] {
-	cursor: pointer;
-	display: inline;
-}
-
 input[type='radio'] {
 	cursor: pointer;
-}
-
-.problems {
-	column-count: 3;
-	margin-left: 12%;
-	margin-right: 0%;
-	padding-bottom: 2%;
-}
-
-.problems input {
-	margin: 5% 0px 0px 0px;
-}
-
-.problems label {
-	margin: 0px 0px 0px 0%;
-}
-
-.problems input[type='number'] {
-	width: 30px;
 }
 
 .submit {
@@ -180,6 +155,12 @@ input[type='submit'] {
 	padding: 10px;
 }
 
+label[for='male'],
+label[for='female'] {
+	cursor: pointer;
+	display: inline;
+}
+
 .women-only {
 	opacity: 0;
 	max-height: 0;
@@ -198,6 +179,16 @@ input[type='submit'] {
 .hr-women-only {
 	border-top: 10px solid lightpink;
 	border-radius: 7px;
+}
+
+.menstrual-difficulties:focus {
+	background-color: #ead3d7;
+	transform: scale(1.04);
+}
+
+.husband-in-favor-textarea:focus {
+	background-color: #ead3d7;
+	transform: scale(1.04);
 }
 
 .siblings {
@@ -350,18 +341,27 @@ label[for='no-married'] {
 	margin-bottom: 120px;
 }
 
-.menstrual-difficulties:focus {
-	background-color: #ead3d7;
-	transform: scale(1.04);
-}
-
-.husband-in-favor-textarea:focus {
-	background-color: #ead3d7;
-	transform: scale(1.04);
-}
-
 .issues-indication {
 	text-align: center;
+}
+
+.problems {
+	column-count: 3;
+	margin-left: 12%;
+	margin-right: 0%;
+	padding-bottom: 2%;
+}
+
+.problems input {
+	margin: 5% 0px 0px 0px;
+}
+
+.problems label {
+	margin: 0px 0px 0px 0%;
+}
+
+.problems input[type='number'] {
+	width: 30px;
 }
 
 @media (max-width: 768px) {

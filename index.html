@@ -25,6 +25,7 @@
         <hr>
 
     <form name="PDI" id="pdiForm" enctype="multipart/form-data" method="POST"     data-netlify="true">  
+      
       <div class="aligned"> 
         <div class="fullName">
           <label for="fullName">Name</label>
@@ -47,7 +48,7 @@
         </div>
     
         <div class="address">
-          <label for="Address">Street</label>
+          <label for="address">Street</label>
             <input type="text" onkeypress="return noenter()" name="address" id="address" placeholder="Required" required> 
         </div>
 
@@ -259,7 +260,8 @@
             <input type="radio" onkeypress="return noenter()" name="siblings" id="yes-siblings" value="yes-siblings">
             <label for="yes-siblings">Yes</label>
             <br>
-            <div class="siblings-order">
+            <br>
+            <div class="siblings-order straightened">
               <label for="older-brothers">Older brothers</label>
               <input type="number" onkeypress="return noenter()" name="older-brothers" id="older-brothers" min="0" max="20">
               <br> 
@@ -278,9 +280,9 @@
 
     <hr>
     <!-- <div class="marriage-and-family"> -->
-    <div class="marriage-info">
-    <h2>Marriage</h2>
-    Are you married? 
+      <div class="marriage-info">
+        <h2>Marriage</h2>
+        Are you married? 
     <br>
     <br>
     <div class="no-married">
@@ -313,7 +315,7 @@
           <div>
                   <label for="spouse">Spouse's Name</label>
                   <input type="text" onkeypress="return noenter()" name="spouse" id="spouse"> 
-                </div>
+          </div>
                 <div>
                   <label for="spouse-birth-date">Spouse's Birth Date</label>
                   <input type="date" onkeypress="return noenter()" name="spouse-birth-date" id="spouse-birth-date" min="1910-10-20" max="2015-10-20"> 
@@ -340,56 +342,112 @@
                 <textarea name="dating" onkeypress="return noenter()" id="dating" cols="90" rows="4"></textarea>
           <br>
           <br>
-                <div>
+            <div class="previously-married"> 
                   Have either of you been previously married?
                   <br>
                   <br>
                   <input type="radio" onkeypress="return noenter()" name="previously-married" id="previously-married-no" value="previously-married-no">
                   <label for="previously-married-no">No</label>
                   <br>
+              <div class="previously-married-yes">
                   <input type="radio" onkeypress="return noenter()" 
                   name="previously-married" id="previously-married-yes" value="previously-married-yes"> 
                   <label for="previously-married-yes">Yes</label>
+                <div class="previously-married-description">Please explain:
+                    <br>
+                    <textarea name="previously-married-description" id="previously-married-description" cols="90" rows="4"></textarea>
                 </div>
+              </div>
+            </div>
                 <br>
-                <div>
+
+                <div class="separated">
                   Have you ever been separated?
                   <br>
                   <br>
                   <input type="radio" onkeypress="return noenter()" name="separated" id="separated-no" value="separated-no">
                   <label for="separated-no">No</label>
                   <br>
+                <div class="separated-yes">
                   <input type="radio" onkeypress="return noenter()" name="separated" id="separated-yes" value="separated-yes"> 
                   <label for="separated-yes">Yes</label>
+                  
+                  <div class="separated-description">Please explain:
+                    <br>
+                    <textarea name="separated-description" id="separated-description" cols="90" rows="4"></textarea>
                 </div>
-                <br>
-                <div>
+              </div>
+              </div>
+<br>
+            <div class="filed-for-divorce">
                   Filed for divorce?
                   <br>
                   <br>
-                  <input type="radio" onkeypress="return noenter()" name="divorce" id="filed-divorce-no" value="filed-divorce-no">
-                  <label for="filed-divorce-no">No</label>
+                  <input type="radio" onkeypress="return noenter()" name="filed-for-divorce" id="filed-for-divorce-no" value="filed-for-divorce-no">
+                  <label for="filed-for-divorce-no">No</label>
                   <br>
-                  <input type="radio" onkeypress="return noenter()" name="divorce" id="filed-divorce-yes" value="filed-divorce-yes"> 
-                  <label for="filed-divorce-yes">Yes</label>
+              <div class="filed-for-divorce-yes">
+                  <input type="radio" onkeypress="return noenter()" name="filed-for-divorce" id="filed-for-divorce-yes" value="filed-for-divorce-yes"> 
+                  <label for="filed-for-divorce-yes">Yes</label>
+                <div class="filed-for-divorce-description">Please explain:
+                    <br>
+                    <textarea name="filed-for-divorce-description" id="filed-for-divorce-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
             </div>
           </div>
-            <hr>
+        </div>
+      </div>
+  <div class="children-family">  
+      <hr>
 <h2>Children and Family</h2>
 
-        <!-- How many children do you have?<br />
-        <div id="children-container">
-          <input type="number" id="children" name="children">
-          <a href="#" id="addChildren" onclick="addChildren()";
-          >Add children details</a>
-        </div> -->
+<div class="children-section">Do you have any children?
+  <br>
+  <br>
+      <!-- <input type="radio" onkeypress="return noenter()" name="children" id="children-no" value="children-no">
+      <label for="children-no">No</label>
+      
+      <div class="children-yes">
+      <input type="radio" onkeypress="return noenter()" name="children" id="children-yes" value="children-yes">
+      <label for="children-yes">Yes</label> -->
+      
+      <div class="children-yes">
+      <input type="checkbox" onkeypress="return noenter()" name="children" id="children-yes" value="children-yes">
+      <label for="children-yes">Yes</label>
+  <br>
+  <br>
+  <div class="child-one-description" name="child-one-description">
+    Please complete for each child:
+    <br>
+    <br>
+    <label for="first-kid-name">Name</label>
+    <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="First child">
+  
+    <label for="first-kid-age">Age</label>
+    <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60">
+Living?
 
-      <br>
-      <div class="kids-container">
+    <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-yes">
+    <label for="first-kid-yes">Yes</label>
+    <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
+    <label for="first-kid-living-no">No</label> 
+
+    <select name="first-kid-status" id="kidStatus">
+      <option value="" disabled selected hidden >Choose one</option>
+      <option value="biological">Biological</option> 
+      <option value="stepKid">Step-child</option>
+      <option value="adopted">Adopted</option>
+  </select>
+  
+</div>
+    </div> 
+    </div>
+    <br>
+    <br>
+
         
-        <div id="first-kid">
+        <!-- <div class="child-one-description" name="child-one-description">
             <label for="first-kid-name">Name</label>
             <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="First child">
           
@@ -402,14 +460,14 @@
             <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
             <label for="first-kid-living-no">No</label> 
         
-            <select name="first-kid-status" id="first-kid-status">
+            <select name="first-kid-status" id="kidStatus">
               <option value="" disabled selected hidden >Choose one</option>
               <option value="biological">Biological</option> 
               <option value="stepKid">Step-child</option>
               <option value="adopted">Adopted</option>
           </select>
-        </div>
-        
+        </div> -->
+<!--         
         <div id="second-child">
           <label for="second-child-name">Name</label>
           <input type="text" onkeypress="return noenter()" name="second-child-name" id="second-child-name" placeholder="Second child">
@@ -422,7 +480,7 @@
           <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-no">  
             <label for="second-child-living-no">No</label> 
           
-          <select name="second-child-status" id="second-child-status">
+          <select name="second-child-status" id="kidStatus">
             <option value="" disabled selected hidden >Choose one</option>
             <option value="biological">Biological</option> 
             <option value="stepKid">Step-child</option>
@@ -525,8 +583,8 @@
                       <option value="stepKid">Step-child</option>
                       <option value="adopted">Adopted</option>
                     </select>
-                    </div>
-      </div>
+                    </div> -->
+      <!-- </div> -->
       
         <br>
         <div>Describe relationship with your father:</div>
@@ -539,7 +597,7 @@
         <textarea name="relationship-mother" id="relationship-mother" cols="90" rows="4"></textarea>
 <br>
 <br>
-      
+</div>
     <hr>
 
     <h2>Health</h2>
@@ -822,6 +880,7 @@ Have you ever seen a psychiatrist or a counselor?
 
 <h2>Problem checklist</h2>
 <h2 class="issues-indication">Please indicate to what degree (0 to 3) the issues below affect you.</h2>
+
 <div class="problems">
 
   <input type="number" onkeypress="return noenter()" name="anger" id="anger" min="0" max="3" value="0">
@@ -949,11 +1008,13 @@ Have you ever seen a psychiatrist or a counselor?
   <br>
   
   <input type="number"onkeypress="return noenter()" name="vice" id="vice" min="0" max="3" value="0">
-  <label for="vice">A Vice: </label><input type="text" name="vice">
+  <label for="vice">A Vice: </label>
+  <input type="text" name="vice">
   <br>
   
   <input type="number" onkeypress="return noenter()" name="problem-other" id="problem-other" min="0" max="3" value="0">
-  <label for="problem-other">Other: </label><input type="text" name="problem-other">
+  <label for="problem-other">Other: </label>
+  <input type="text" name="problem-other">
   <br>
 </div>
 <hr>
@@ -994,6 +1055,5 @@ Have you ever seen a psychiatrist or a counselor?
 <p><input type="submit" value="Submit"></p>
 
 </form>
-</div>
 </body>
 </html>

@@ -398,12 +398,12 @@
           </div>
         </div>
       </div>
-  <div class="children-family">  
+  
+      <div class="children-family">  
       <hr>
 <h2>Children and Family</h2>
 
-<div class="children-section">Do you have any children?
-  <br>
+<!-- <div class="children-section">Do you have children? -->
   <br>
       <!-- <input type="radio" onkeypress="return noenter()" name="children" id="children-no" value="children-no">
       <label for="children-no">No</label>
@@ -412,61 +412,86 @@
       <input type="radio" onkeypress="return noenter()" name="children" id="children-yes" value="children-yes">
       <label for="children-yes">Yes</label> -->
       
-      <div class="children-yes">
+      <!-- <div class="children-yes">
       <input type="checkbox" onkeypress="return noenter()" name="children" id="children-yes" value="children-yes">
-      <label for="children-yes">Yes</label>
-  <br>
-  <br>
-  <div class="child-one-description" name="child-one-description">
-    Please complete for each child:
-    <br>
-    <br>
-    <label for="first-kid-name">Name</label>
-    <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="First child">
-  
-    <label for="first-kid-age">Age</label>
-    <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60">
-Living?
+      <label for="children-yes">Yes</label> -->
 
-    <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-yes">
-    <label for="first-kid-yes">Yes</label>
-    <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
-    <label for="first-kid-living-no">No</label> 
+ <div id="moreChildren" action="#">
+  <label for="numberOfChildren">How many children do you have?</label>
 
-    <select name="first-kid-status" id="kidStatus">
-      <option value="" disabled selected hidden >Choose one</option>
-      <option value="biological">Biological</option> 
-      <option value="stepKid">Step-child</option>
-      <option value="adopted">Adopted</option>
-  </select>
+<select id="numberOfChildren">
+  <option value="">None</option>
+  <option value="1">1 Child</option> 
+  <option value="2">2 Children</option>
+  <option value="3">3 Children</option>
+  <option value="4">4 Children</option>
+  <option value="5">5 Children</option>
+  <option value="6">6 Children</option>
+  <option value="7">7 Children</option>
+  <option value="8">8 Children</option>
+  <option value="9">9 Children</option>
+  <option value="10">10 Children</option>
+</select>
+
+    <div class="hide">  <div class="child-one-description" name="child-one-description">
+      <br>
+      <br>
+      <label for="first-kid-name">Name</label>
+      <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="First child">
+    
+      <label for="first-kid-age">Age</label>
+      <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60">
+  Living?
   
+      <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-yes">
+      <label for="first-kid-yes">Yes</label>
+      <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
+      <label for="first-kid-living-no">No</label> 
+  
+      <select name="first-kid-status" id="kidStatus">
+        <option value="" disabled selected hidden >Choose one</option>
+        <option value="biological">Biological</option> 
+        <option value="stepKid">Step-child</option>
+        <option value="adopted">Adopted</option>
+    </select>
+  
+  </div>
 </div>
-    </div> 
-    </div>
+    <div class="hide">Second Child</div>
+    <div class="hide">Third Child</div>
+    <div class="hide">Fourth Child</div>
+    <div class="hide">Fifth Child</div>
+    <div class="hide">Sixth Child</div>
+    <div class="hide">Seventh Child</div>
+    <div class="hide">Eighth Child</div>
+    <div class="hide">Ninth Child</div>
+    <div class="hide">Tenth Child</div>
+
+    <script>
+      ( function( d ) {
+      //   'use strict'
+         var c, children = d.querySelectorAll( '.hide' );
+      //    d.querySelector( '#moreChildren' ).reset();
+      
+         d.querySelector( '#numberOfChildren' ).addEventListener( 'change',
+            function() {
+              for( c = 0; c < children.length; c ++ ) {
+                    children[ c ].classList.add( 'hide' );
+               }
+              for ( c = 0; c < this.value; c ++ ) {
+                    children[ c ].classList.remove( 'hide' );
+               }
+            },false );
+       }( document ));
+      </script>
+
+  </div>
+</div>
+  <br>
+  <br>
     <br>
     <br>
 
-        
-        <!-- <div class="child-one-description" name="child-one-description">
-            <label for="first-kid-name">Name</label>
-            <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="First child">
-          
-            <label for="first-kid-age">Age</label>
-            <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60">
-        Living?
-        
-            <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-yes">
-            <label for="first-kid-yes">Yes</label>
-            <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
-            <label for="first-kid-living-no">No</label> 
-        
-            <select name="first-kid-status" id="kidStatus">
-              <option value="" disabled selected hidden >Choose one</option>
-              <option value="biological">Biological</option> 
-              <option value="stepKid">Step-child</option>
-              <option value="adopted">Adopted</option>
-          </select>
-        </div> -->
 <!--         
         <div id="second-child">
           <label for="second-child-name">Name</label>
@@ -585,7 +610,7 @@ Living?
                     </select>
                     </div> -->
       <!-- </div> -->
-      
+      <div class="parents">
         <br>
         <div>Describe relationship with your father:</div>
         <br>
@@ -595,9 +620,10 @@ Living?
         <div>Describe relationship with your mother:</div>
         <br>
         <textarea name="relationship-mother" id="relationship-mother" cols="90" rows="4"></textarea>
+      </div>
 <br>
 <br>
-</div>
+
     <hr>
 
     <h2>Health</h2>
@@ -1055,5 +1081,6 @@ Have you ever seen a psychiatrist or a counselor?
 <p><input type="submit" value="Submit"></p>
 
 </form>
+
 </body>
 </html>

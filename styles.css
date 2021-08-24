@@ -321,7 +321,7 @@ label[for='no-married'] {
 	overflow: visible;
 }
 
-.kids-container input[type='number'] {
+/* .kids-container input[type='number'] {
 	width: 3.5%;
 	margin-right: 40px;
 }
@@ -341,7 +341,7 @@ label[for='no-married'] {
 	overflow: visible;
 	height: auto;
 	margin-bottom: 50px;
-}
+} */
 
 .chronic-description {
 	opacity: 0;
@@ -451,6 +451,10 @@ label[for='no-married'] {
 
 .submit {
 	padding: 10px 50px;
+}
+
+.hide {
+	display: none;
 }
 
 @media (max-width: 768px) {

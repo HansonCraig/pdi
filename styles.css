@@ -229,27 +229,20 @@ input {
 	text-align: right;
 }
 
+.marriage-info {
+	margin-bottom: 20px;
+}
+
 label[for='yes-married'],
 label[for='no-married'] {
 	cursor: pointer;
 	display: inline;
 }
 
-.marriage-info {
-	margin-bottom: 20px;
-}
-
 #marriage-options {
 	opacity: 0;
 	max-height: 0;
 	overflow: hidden;
-}
-
-.yes-married input[type='radio']:checked ~ #marriage-options {
-	opacity: 1;
-	overflow: visible;
-	height: auto;
-	margin-bottom: 1150px;
 }
 
 .single-status {
@@ -264,6 +257,13 @@ label[for='no-married'] {
 	overflow: visible;
 	height: auto;
 	margin-bottom: 50px;
+}
+
+.yes-married input[type='radio']:checked ~ #marriage-options {
+	opacity: 1;
+	overflow: visible;
+	height: auto;
+	margin-bottom: 1150px;
 }
 
 .previously-married-description {
@@ -305,7 +305,6 @@ label[for='no-married'] {
 .filed-for-divorce-description {
 	margin-top: 1rem;
 	opacity: 0;
-	max-height: 0;
 	overflow: hidden;
 }
 
@@ -317,31 +316,12 @@ label[for='no-married'] {
 	input[type='radio']:checked
 	~ .filed-for-divorce-description {
 	opacity: 1;
-	max-height: 140px;
 	overflow: visible;
-}
-
-/* .kids-container input[type='number'] {
-	width: 3.5%;
-	margin-right: 40px;
 }
 
 #kidStatus {
 	margin-left: 40px;
 }
-
-.child-one-description {
-	opacity: 0;
-	max-height: 0;
-	overflow: hidden;
-}
-
-.children-yes input[type='checkbox']:checked ~ .child-one-description {
-	opacity: 1;
-	overflow: visible;
-	height: auto;
-	margin-bottom: 50px;
-} */
 
 .chronic-description {
 	opacity: 0;

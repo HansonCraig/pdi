@@ -281,7 +281,7 @@ label[for='no-married'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 1150px;
+	max-height: 1150px;
 }
 
 .previously-married-description {
@@ -299,7 +299,7 @@ label[for='no-married'] {
 	input[type='radio']:checked
 	~ .previously-married-description {
 	opacity: 1;
-	max-height: 140px;
+	max-height: 120px;
 	overflow: visible;
 }
 
@@ -316,13 +316,14 @@ label[for='no-married'] {
 
 .separated-yes input[type='radio']:checked ~ .separated-description {
 	opacity: 1;
-	max-height: 140px;
+	max-height: 120px;
 	overflow: visible;
 }
 
 .filed-for-divorce-description {
 	margin-top: 1rem;
 	opacity: 0;
+	max-height: 0;
 	overflow: hidden;
 }
 
@@ -335,6 +336,7 @@ label[for='no-married'] {
 	~ .filed-for-divorce-description {
 	opacity: 1;
 	overflow: visible;
+	max-height: 120px;
 }
 
 #kidStatus {

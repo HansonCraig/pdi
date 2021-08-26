@@ -17,7 +17,7 @@ input {
 }
 
 .aligned label {
-	width: 8%;
+	width: 5.5rem;
 	/* Positions the label text beside the input */
 	text-align: right;
 }
@@ -242,7 +242,7 @@ input {
 }
 
 .straightened label {
-	width: 13%;
+	width: 8.4rem;
 	/* Positions the label text beside the input */
 	text-align: right;
 }
@@ -282,6 +282,27 @@ label[for='no-married'] {
 	overflow: visible;
 	height: auto;
 	max-height: 1150px;
+}
+
+.aligned-spouse label,
+input {
+	/* to define widths */
+	display: inline-block;
+}
+
+.aligned-spouse label {
+	width: 10.2rem;
+	/* Positions the label text beside the input */
+	text-align: right;
+}
+
+.dating {
+	display: inline;
+	/* width: 11rem; */
+}
+
+.dating label {
+	margin-left: 1.5rem;
 }
 
 .previously-married-description {
@@ -446,6 +467,18 @@ input[type='text'] {
 	text-align: center;
 }
 
+.aligned-church label,
+input {
+	/* to define widths */
+	display: inline-block;
+}
+
+.aligned-church label {
+	width: 13.3rem;
+	/* Positions the label text beside the input */
+	text-align: right;
+}
+
 .problems {
 	column-count: 3;
 	margin-left: 12%;
@@ -455,6 +488,24 @@ input[type='text'] {
 
 .problems input[type='number'] {
 	width: 30px;
+}
+
+.referral-aligned label,
+input {
+	/* to define widths */
+	display: inline-block;
+	max-width: 50rem;
+}
+
+.referral-aligned label {
+	width: 15.9rem;
+	/* Positions the label text beside the input */
+	text-align: right;
+}
+
+.referral-aligned input {
+	/* to define widths */
+	max-width: 20rem;
 }
 
 .submit {

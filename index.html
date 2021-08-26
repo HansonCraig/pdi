@@ -204,13 +204,13 @@
         <hr class="hr-women-only">  
           </div>
           </div>
-
-    <div class="occupation aligned">
+<div class="aligned">
+    <div class="occupation">
           <label for="occupation">Occupation</label>
             <input type="text" onkeypress="return noenter()" name="occupation" id="occupation"> 
     </div>
     
-        <div class="education aligned">
+        <div class="education">
           <label for="education">Education</label>
             <select name="education" id="education">
               <option value="" disabled selected>Choose one</option>
@@ -221,11 +221,11 @@
               <option value="graduate">Graduate</option>
             </select>
         </div>
-    <div class="aligned">
+    <div>
           <label for="degree">Degree</label>
             <input type="text" onkeypress="return noenter()" name="degree" id="degree"> 
     </div>
-  
+  </div>
     <br>
     <div>Other Training (List Type and years)</div>
       <br>
@@ -308,11 +308,12 @@
         <br>
         <div id="marriage-options">
           <br>
-          <div>
+          <div class="aligned-spouse">
             <label for="marriage-date">Date of Marriage</label>
             <input type="date" onkeypress="return noenter()" name="marriage-date" id="marriage-date" min="1910-10-20" max="2020-10-20"> 
           </div>
-          <br>    
+          <br> 
+          <div class="aligned-spouse">   
           <div>
                   <label for="spouse">Spouse's Name</label>
                   <input type="text" onkeypress="return noenter()" name="spouse" id="spouse"> 
@@ -329,12 +330,18 @@
                   <label for="employed-length">How long employed?</label>
                   <input type="text" onkeypress="return noenter()" name="employed-length" id="employed-length"> 
                 </div>
+              </div>
+
                 <br>
-                <div>Length of dating:
+                <div class="dating">Length of dating:
+                 
                 <label for="years-dating">Years</label>
                 <input type="number" onkeypress="return noenter()" name="years-dating" id="years-dating" min="0" max="50"> 
+                
                 <label for="age">Months</label>
-                <input type="number" onkeypress="return noenter()" name="months-dating" id="months-dating" min="0" max="11"> 
+                <input type="number" onkeypress="return noenter()" name="months-dating" id="months-dating" min="0" max="11">
+              
+            </div>
               </div>
           <br>
 
@@ -343,7 +350,6 @@
                 <textarea name="dating" onkeypress="return noenter()" id="dating" cols="90" rows="4"></textarea>
           <br>
           <br>
-            <div class="previously-married"> 
                   Have either of you been previously married?
                   <br>
                   <br>
@@ -362,11 +368,8 @@
                     <textarea name="previously-married-description" id="previously-married-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
-
-            </div>
                 <br>
 
-            <!-- <div class="separated"> -->
                   Have you ever been separated?
                   <br>
                   <br>
@@ -382,7 +385,6 @@
                     <textarea name="separated-description" id="separated-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
-            <!-- </div> -->
 <br>
 
                   Filed for divorce?
@@ -399,11 +401,10 @@
                     <textarea name="filed-for-divorce-description" id="filed-for-divorce-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
-
           </div>
         </div>
       </div>
-      
+      <br>
       <div class="children-family">  
       <hr>
 <h2>Children and Family</h2>
@@ -750,7 +751,7 @@ Have you ever used drugs for anything other than medical purposes?
         <textarea name="non-medical-explanation" id="non-medical-explanation" cols="90" rows="4"></textarea>
       </div>
   </div>
-<br>
+
 <div>Have you ever been arrested?
   <br>
   <br>
@@ -782,7 +783,6 @@ Have you ever used drugs for anything other than medical purposes?
   </div>
 </div>
 <br>
-<br>
     <div>Do you drink coffee and/or other caffeine drinks?
       <br>
       <br>
@@ -802,7 +802,7 @@ Have you ever used drugs for anything other than medical purposes?
 </div>
 <br>
   </div>
-      <br>
+      <!-- <br> -->
   <div>Do you smoke?
     <br>
     <br>
@@ -821,7 +821,7 @@ Have you ever used drugs for anything other than medical purposes?
 </div>
 </div>
       <br>
-      <br>
+      <!-- <br> -->
 
 <div>Have you ever had interpersonal problems on the job?
   <br>
@@ -852,7 +852,7 @@ Have you ever used drugs for anything other than medical purposes?
   </div>
   </div>
     <br>
-  <br>
+  <!-- <br> -->
 Have you ever seen a psychiatrist or a counselor? 
   <br>
   <br>
@@ -873,22 +873,25 @@ Have you ever seen a psychiatrist or a counselor?
     </div>
 </div>
 
-  <br>
+  <!-- <br> -->
   
-<br>
+<!-- <br> -->
 <br>
 </Have>
 <hr>
 
 <h2>Religious</h2>
 
-  <div>
+<div class="aligned-church"> 
+<div>
     <label for="denomination">Denominational Preference:</label>
     <input type="text" onkeypress="return noenter()" name="denomination" id="denomination"> 
   </div>
   <div>
     <label for="church">Church attending:</label>
     <input type="text" onkeypress="return noenter()" name="church" id="church">
+  </div>
+</div> 
     <br>
     Member? 
     <br>
@@ -900,7 +903,7 @@ Have you ever seen a psychiatrist or a counselor?
       <label for="member-yes">Yes</label>
       <br>
       <br>
-    </div>
+    
     <div>
       <label for="attendance">Church attendance per month:</label>
       <input type="number" onkeypress="return noenter()" name="attendance" id="attendance" min="0" max="20"> 
@@ -1132,15 +1135,14 @@ Have you ever seen a psychiatrist or a counselor?
 <textarea name="other-info" id="other-info" cols="90" rows="4"></textarea>
 <br>
 <br>
-<div>
+<div class="referral-aligned">
   <label for="referred">Referred to us by:</label>
   <input type="text" onkeypress="return noenter()" name="referred" id="referred">
 <br> 
   <label for="relationship">Relationship:</label>
   <input type="text" onkeypress="return noenter()" name="relationship" id="relationship"> 
-</div>
-<div>
-  <label for="counselor"><label>Deliver this to a particular counselor?</label>
+<br>
+  <label for="counselor">Deliver to a particular counselor?</label>
   <input type="text" onkeypress="return noenter()" name="counselor" id="counselor"> 
 </div>
 <p><input type="submit" value="Submit"></p>

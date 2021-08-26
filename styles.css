@@ -162,6 +162,10 @@ input[type='submit'] {
 	padding: 10px;
 }
 
+.sex-radios {
+	margin-left: 6.5rem;
+}
+
 label[for='male'],
 label[for='female'] {
 	cursor: pointer;
@@ -198,6 +202,15 @@ label[for='female'] {
 	transform: scale(1.04);
 }
 
+.education select {
+	width: 21%;
+	margin: 0.4rem;
+}
+
+.education select:focus {
+	outline: none;
+	transform: scale(1.06);
+}
 .siblings {
 	margin-bottom: 40px;
 }
@@ -325,12 +338,12 @@ label[for='no-married'] {
 }
 
 #kidStatus {
-	margin-right: 2rem;
+	margin-right: 3.2rem;
 }
 
 #moreChildren input[type='number'],
 input[type='text'] {
-	margin-right: 2rem;
+	margin-right: 3.2rem;
 }
 
 #numberOfChildren {

@@ -130,6 +130,7 @@
           <br>
     
           <div class="sex">
+
     You are ...  
           <br>
           <br>
@@ -164,7 +165,7 @@
 
           <br>
 
-          <textarea class="menstrual-difficulties" name="menstrual-difficulties" id="menstrual-difficulties" cols="90" rows="4"></textarea>
+          <textarea class="menstrual-difficulties" name="menstrual-difficulties" id="menstrual-difficulties" cols="84" rows="4"></textarea>
           
           <br>
           <br>
@@ -195,7 +196,7 @@
 
           <br>
 
-            <textarea class="husband-in-favor-textarea" name="husband-in-favor-explanation" id="husband-in-favor-explanation" cols="90" rows="4"></textarea>
+            <textarea class="husband-in-favor-textarea" name="husband-in-favor-explanation" id="husband-in-favor-explanation" cols="84" rows="4"></textarea>
           </div>
 
           <br>
@@ -204,12 +205,12 @@
           </div>
           </div>
 
-    <div class="occupation">
+    <div class="occupation aligned">
           <label for="occupation">Occupation</label>
             <input type="text" onkeypress="return noenter()" name="occupation" id="occupation"> 
     </div>
     
-        <div>
+        <div class="education aligned">
           <label for="education">Education</label>
             <select name="education" id="education">
               <option value="" disabled selected>Choose one</option>
@@ -220,7 +221,7 @@
               <option value="graduate">Graduate</option>
             </select>
         </div>
-    <div>
+    <div class="aligned">
           <label for="degree">Degree</label>
             <input type="text" onkeypress="return noenter()" name="degree" id="degree"> 
     </div>
@@ -346,24 +347,26 @@
                   Have either of you been previously married?
                   <br>
                   <br>
-                  <div>
+
                   <input type="radio" onkeypress="return noenter()" name="previously-married" id="previously-married-no" value="previously-married-no">
                   <label for="previously-married-no">No</label>
                   <br>
               <div class="previously-married-yes">
-                  <input type="radio" onkeypress="return noenter()" 
+                
+                <input type="radio" onkeypress="return noenter()" 
                   name="previously-married" id="previously-married-yes" value="previously-married-yes"> 
                   <label for="previously-married-yes">Yes</label>
+                
                 <div class="previously-married-description">Please explain:
                     <br>
                     <textarea name="previously-married-description" id="previously-married-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
-            </div>
+
             </div>
                 <br>
 
-            <div class="separated">
+            <!-- <div class="separated"> -->
                   Have you ever been separated?
                   <br>
                   <br>
@@ -379,9 +382,9 @@
                     <textarea name="separated-description" id="separated-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
-            </div>
+            <!-- </div> -->
 <br>
-            <div class="filed-for-divorce">
+
                   Filed for divorce?
                   <br>
                   <br>
@@ -396,7 +399,7 @@
                     <textarea name="filed-for-divorce-description" id="filed-for-divorce-description" cols="90" rows="4"></textarea>
                 </div>
               </div>
-            </div>
+
           </div>
         </div>
       </div>

@@ -27,6 +27,11 @@ input[type='text']:focus {
 	transform: scale(1.06);
 }
 
+select:focus {
+	outline: none;
+	transform: scale(1.06);
+}
+
 textarea:focus {
 	outline: none;
 	transform: scale(1.04);
@@ -320,9 +325,17 @@ label[for='no-married'] {
 }
 
 #kidStatus {
-	margin-left: 40px;
+	margin-right: 2rem;
 }
 
+#moreChildren input[type='number'],
+input[type='text'] {
+	margin-right: 2rem;
+}
+
+#numberOfChildren {
+	margin-left: 1rem;
+}
 .chronic-description {
 	opacity: 0;
 	max-height: 0;

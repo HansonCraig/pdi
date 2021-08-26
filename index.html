@@ -24,7 +24,7 @@
       <h3>Please complete this form carefully</h3>
         <hr>
 
-    <div name="PDI" id="pdiForm" enctype="multipart/form-data" method="POST"     data-netlify="true">  
+    <div name="PDI" id="pdiForm" enctype="application/x-www-form-urlencoded" method="POST"     data-netlify="true">  
       
       <div class="aligned"> 
         <div class="fullName">
@@ -410,16 +410,16 @@
 
 <select id="numberOfChildren">
   <option value="">None</option>
-  <option value="1">1 Child</option> 
-  <option value="2">2 Children</option>
-  <option value="3">3 Children</option>
-  <option value="4">4 Children</option>
-  <option value="5">5 Children</option>
-  <option value="6">6 Children</option>
-  <option value="7">7 Children</option>
-  <option value="8">8 Children</option>
-  <option value="9">9 Children</option>
-  <option value="10">10 Children</option>
+  <option value="1">1</option> 
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
 </select>
 
     <div class="hide">  <div class="child-one-description" name="child-one-description">
@@ -430,19 +430,21 @@
     
       <label for="first-kid-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60">
-  Living?
   
+  <select name="first-kid-status" id="kidStatus">
+    <option value="" disabled selected hidden >Choose one</option>
+    <option value="biological">Biological</option> 
+    <option value="stepKid">Step-child</option>
+    <option value="adopted">Adopted</option>
+  </select>
+
+  Living?
       <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-yes">
       <label for="first-kid-yes">Yes</label>
       <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
       <label for="first-kid-living-no">No</label> 
   
-      <select name="first-kid-status" id="kidStatus">
-        <option value="" disabled selected hidden >Choose one</option>
-        <option value="biological">Biological</option> 
-        <option value="stepKid">Step-child</option>
-        <option value="adopted">Adopted</option>
-      </select>
+      
   </div>
 </div>
     <div class="hide">
@@ -451,12 +453,6 @@
       <input type="text" onkeypress="return noenter()" name="second-child-name" id="second-child-name" placeholder="Second child">
       <label for="second-child-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="second-child-age" id="second-child-age" min="0" max="60">
-      Living?
-      
-      <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-yes">
-        <label for="second-child-living-yes">Yes</label>
-      <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-no">  
-        <label for="second-child-living-no">No</label> 
       
       <select name="second-child-status" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
@@ -464,6 +460,12 @@
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+      Living?
+      
+      <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-yes">
+        <label for="second-child-living-yes">Yes</label>
+      <input type="radio" onkeypress="return noenter()" name="second-child-living" id="second-child-living-no">  
+        <label for="second-child-living-no">No</label> 
     </div>
   </div>
     <div class="hide">
@@ -472,20 +474,19 @@
       <input type="text" onkeypress="return noenter()" name="kid-three" id="kid-three" placeholder="Third child">
       <label for="kid-three-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-three-age" id="kid-three-age" min="0" max="60">
-      Living?
-    
-      <input type="radio" onkeypress="return noenter()" name="kid-three-living" id="kid-three-living-yes">
-      <label for="kid-three-living-yes">Yes</label>
-
-      <input type="radio" onkeypress="return noenter()" name="kid-three-living" id="kid-three-living-no">  
-      <label for="kid-three-living-no">No</label>
-
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-three-living" id="kid-three-living-yes">
+      <label for="kid-three-living-yes">Yes</label>
+
+      <input type="radio" onkeypress="return noenter()" name="kid-three-living" id="kid-three-living-no">  
+      <label for="kid-three-living-no">No</label>
     </div>
   
   </div>
@@ -495,20 +496,21 @@
       <input type="text" onkeypress="return noenter()" name="kid-four" id="kid-four" placeholder="Fourth child">
       <label for="kid-four-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-four-age" id="kid-four-age" min="0" max="60">
+
+      <select name="kidStatus" id="kidStatus">
+        <option value="" disabled selected hidden >Choose one</option>
+        <option value="biological">Biological</option> 
+        <option value="stepKid">Step-child</option>
+        <option value="adopted">Adopted</option>
+      </select>
+
       Living?
       <input type="radio" onkeypress="return noenter()" name="kid-four-living" id="kid-four-living-yes">
     <label for="kid-four-living-yes">Yes</label>
 
     <input type="radio" onkeypress="return noenter()" name="kid-four-living" id="kid-four-living-no">  
     
-    <label for="kid-four-living-no">No</label> 
-      
-    <select name="kidStatus" id="kidStatus">
-        <option value="" disabled selected hidden >Choose one</option>
-        <option value="biological">Biological</option> 
-        <option value="stepKid">Step-child</option>
-        <option value="adopted">Adopted</option>
-      </select>
+    <label for="kid-four-living-no">No</label>
       </div>
     </div>
     <div class="hide">
@@ -517,18 +519,21 @@
       <input type="text" onkeypress="return noenter()" name="kid-five" id="kid-five" placeholder="Fifth child">
       <label for="kid-five-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-five-age" id="kid-five-age" min="0" max="60">
-      Living?
-      <input type="radio" onkeypress="return noenter()" name="kid-five-living" id="kid-five-living-yes">
-  <label for="kid-five-living-yes">Yes</label>
 
-  <input type="radio" onkeypress="return noenter()" name="kid-five-living" id="kid-five-living-no">  
-  <label for="kid-five-living-no">No</label>  
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-five-living" id="kid-five-living-yes">
+  <label for="kid-five-living-yes">Yes</label>
+
+  <input type="radio" onkeypress="return noenter()" name="kid-five-living" id="kid-five-living-no">  
+  <label for="kid-five-living-no">No</label>  
+      
       </div>
     </div>
     <div class="hide">
@@ -537,18 +542,21 @@
       <input type="text" onkeypress="return noenter()" name="kid" id="kid" placeholder="Sixth child">
       <label for="kid-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
-      Living?
-      <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
-<label for="kid-living-yes">Yes</label>
 
-<input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
-<label for="kid-six-living-no">No</label>  
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-yes">
+<label for="kid-living-yes">Yes</label>
+
+<input type="radio" onkeypress="return noenter()" name="kid-living" id="kid-living-no">  
+<label for="kid-six-living-no">No</label>  
+      
       </div>
     </div>
     <div class="hide">
@@ -557,18 +565,21 @@
       <input type="text" onkeypress="return noenter()" name="kid-seven" id="kid-seven" placeholder="Seventh child">
       <label for="kid-seven-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-seven-age" id="kid-seven-age" min="0" max="60">
-      Living?
-      <input type="radio" onkeypress="return noenter()" name="kid-seven-living" id="kid-seven-living-yes">
-<label for="kid-seven-living-yes">Yes</label>
 
-<input type="radio" onkeypress="return noenter()" name="kid-seven-living" id="kid-seven-living-no">  
-<label for="kid-seven-living-no">No</label>  
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-seven-living" id="kid-seven-living-yes">
+<label for="kid-seven-living-yes">Yes</label>
+
+<input type="radio" onkeypress="return noenter()" name="kid-seven-living" id="kid-seven-living-no">  
+<label for="kid-seven-living-no">No</label>  
+      
       </div>
     </div>
     <div class="hide"><div id="kid-eight">
@@ -576,18 +587,21 @@
       <input type="text" onkeypress="return noenter()" name="kid-eight" id="kid-eight" placeholder="Eighth child">
       <label for="kid-eight-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-eight-age" id="kid-eight-age" min="0" max="60">
-      Living?
-      <input type="radio" onkeypress="return noenter()" name="kid-eight-living" id="kid-eight-living-yes">
-<label for="kid-eight-living-yes">Yes</label>
 
-<input type="radio" onkeypress="return noenter()" name="kid-eight-living" id="kid-eight-living-no">  
-<label for="kid-eight-living-no">No</label>  
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-eight-living" id="kid-eight-living-yes">
+<label for="kid-eight-living-yes">Yes</label>
+
+<input type="radio" onkeypress="return noenter()" name="kid-eight-living" id="kid-eight-living-no">  
+<label for="kid-eight-living-no">No</label>  
+      
       </div>
     </div>
     <div class="hide"><div id="kid-nine">
@@ -595,18 +609,21 @@
       <input type="text" onkeypress="return noenter()" name="kid-nine" id="kid-nine" placeholder="Ninth child">
       <label for="kid-nine-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-nine-age" id="kid-nine-age" min="0" max="60">
-      Living?
-      <input type="radio" onkeypress="return noenter()" name="kid-nine-living" id="kid-nine-living-yes">
-<label for="kid-nine-living-yes">Yes</label>
 
-<input type="radio" onkeypress="return noenter()" name="kid-nine-living" id="kid-nine-living-no">  
-<label for="kid-nine-living-no">No</label>  
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-nine-living" id="kid-nine-living-yes">
+<label for="kid-nine-living-yes">Yes</label>
+
+<input type="radio" onkeypress="return noenter()" name="kid-nine-living" id="kid-nine-living-no">  
+<label for="kid-nine-living-no">No</label>  
+      
       </div>
     </div>
     <div class="hide"><div id="kid-ten">
@@ -614,18 +631,21 @@
       <input type="text" onkeypress="return noenter()" name="kid-ten" id="kid-ten" placeholder="Tenth child">
       <label for="kid-ten-age">Age</label>
       <input type="number" onkeypress="return noenter()" name="kid-ten-age" id="kid-ten-age" min="0" max="60">
-      Living?
-      <input type="radio" onkeypress="return noenter()" name="kid-ten-living" id="kid-ten-living-yes">
-<label for="kid-ten-living-yes">Yes</label>
 
-<input type="radio" onkeypress="return noenter()" name="kid-ten-living" id="kid-ten-living-no">  
-<label for="kid-ten-living-no">No</label>  
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Choose one</option>
         <option value="biological">Biological</option> 
         <option value="stepKid">Step-child</option>
         <option value="adopted">Adopted</option>
       </select>
+
+      Living?
+      <input type="radio" onkeypress="return noenter()" name="kid-ten-living" id="kid-ten-living-yes">
+<label for="kid-ten-living-yes">Yes</label>
+
+<input type="radio" onkeypress="return noenter()" name="kid-ten-living" id="kid-ten-living-no">  
+<label for="kid-ten-living-no">No</label>  
+      
       </div>
       </div>
 

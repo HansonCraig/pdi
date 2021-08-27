@@ -520,21 +520,23 @@ input {
 	body {
 		padding: auto;
 		height: 95%;
+		margin-left: 2rem;
 	}
 	.pdi-form {
-		transform: scale(0.75);
 		height: 100vh;
 		margin-bottom: 20px;
+		margin-left: 2rem;
 	}
 }
 
 @media (max-width: 576px) {
 	body {
-		padding: auto;
 		height: 95%;
+		margin-left: 2rem;
 	}
 	.pdi-form {
 		transform: scale(0.5);
 		height: 100vh;
+		margin-left: 2rem;
 	}
 }

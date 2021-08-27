@@ -24,6 +24,7 @@
       <h3>Please complete this form carefully</h3>
         <hr>
 
+        <form>
     <div name="PDI" id="pdiForm" enctype="multipart/form-data" method="POST"     data-netlify="true">  
       
       <div class="aligned"> 
@@ -426,7 +427,8 @@
   <option value="10">10</option>
 </select>
 
-    <div class="hide">  <div class="child-one-description" name="child-one-description">
+    <div class="hide">  
+      <div class="child-one-description" name="child-one-description">
       <br>
       <br>
       <label for="first-kid-name">Name</label>
@@ -446,9 +448,7 @@
       <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-yes">
       <label for="first-kid-yes">Yes</label>
       <input type="radio" onkeypress="return noenter()" name="first-kid-living" id="first-kid-living-no">  
-      <label for="first-kid-living-no">No</label> 
-  
-      
+      <label for="first-kid-living-no">No</label>  
   </div>
 </div>
     <div class="hide">
@@ -654,23 +654,16 @@
       </div>
 
     <script>
-      ( function( d ) {
-      //   'use strict'
-         var c, children = d.querySelectorAll( '.hide' );
-      //    d.querySelector( '#moreChildren' ).reset();
-      
-         d.querySelector( '#numberOfChildren' ).addEventListener( 'change',
-            function() {
+      ( function( d ) 
+      {var c, children = d.querySelectorAll( '.hide' );
+          d.querySelector( '#numberOfChildren' ).addEventListener( 'change',
+            function() 
+            {
               for( c = 0; c < children.length; c ++ ) {
-                    children[ c ].classList.add( 'hide' );
-               }
+                    children[ c ].classList.add( 'hide' );}
               for ( c = 0; c < this.value; c ++ ) {
-                    children[ c ].classList.remove( 'hide' );
-               }
-            },false );
-       }
-       ( document )
-       );
+                    children[ c ].classList.remove( 'hide' );}
+            },false );}( document ));
       </script>
   </div>
 </div>
@@ -688,12 +681,9 @@
         <br>
         <textarea name="relationship-mother" id="relationship-mother" cols="90" rows="4"></textarea>
       </div>
-    
 <br>
 <br>
-
     <hr>
-
     <h2>Health</h2>
   <div>Describe your health</div>
 <br>

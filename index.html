@@ -49,12 +49,12 @@
     
         <div class="address">
           <label for="address">Street</label>
-            <input type="text" onkeypress="return noenter()" name="address" id="address" placeholder="Required" required> 
+            <input type="text" onkeypress="return noenter()" name="address" id="address"> 
         </div>
 
         <div class="city">
           <label for="city">City</label>
-            <input type="text" onkeypress="return noenter()" name="city" id="city" placeholder="Required" required> 
+            <input type="text" onkeypress="return noenter()" name="city" id="city"> 
         </div>
 
         <div class="state">            
@@ -116,7 +116,7 @@
 
           <div class="zipcode">
             <label for="zipcode">Zip</label>
-              <input type="text" onkeypress="return noenter()" name="zipcode" id="zipcode" placeholder="Required" required> 
+              <input type="text" onkeypress="return noenter()" name="zipcode" id="zipcode"> 
           </div>
 
           <br>
@@ -425,15 +425,15 @@
   <option value="9">9</option>
 </select>
 
-    <div class="hide">  
+    <div class="hide">
       <div class="child-one-description" name="child-one-description">
       <br>
       <br>
       <label for="first-kid-name" hidden="true">Child 1</label>
-      <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="Name">
+      <input type="text" onkeypress="return noenter()" name="first-kid-name" id="first-kid-name" placeholder="First Child's Name">
     
       <label for="first-kid-age" hidden="true">Age</label>
-      <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60">
+      <input type="number" onkeypress="return noenter()" name="first-kid-age" id="first-kid-age" min="0" max="60" placeholder="Age">
   
   <select name="first-kid-status" id="kidStatus">
     <option value="" disabled selected hidden >Select</option>
@@ -451,10 +451,10 @@
 
     <div class="hide">
       <div id="second-kid">
-      <label for="second-kid-name">Child 2 </label>
-      <input type="text" onkeypress="return noenter()" name="second-child-name" id="second-child-name" placeholder="Name">
-      <label for="second-child-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="second-child-age" id="second-child-age" min="0" max="60">
+      <label for="second-kid-name" hidden="true">Child 2</label>
+      <input type="text" onkeypress="return noenter()" name="second-child-name" id="second-child-name" placeholder="Second Child">
+      <label for="second-child-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="second-child-age" id="second-child-age" min="0" max="60" placeholder="Age">
       
       <select name="second-child-status" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
@@ -471,10 +471,11 @@
   </div>
     <div class="hide">
       <div id="kid-three">
-      <label for="third-kid-name">Child 3 </label>
-      <input type="text" onkeypress="return noenter()" name="kid-three" id="kid-three" placeholder="Name">
-      <label for="kid-three-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-three-age" id="kid-three-age" min="0" max="60">
+      <label for="third-kid-name" hidden="true">Child 3</label>
+      <input type="text" onkeypress="return noenter()" name="kid-three" id="kid-three" placeholder="Third">
+      <label for="kid-three-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-three-age" id="kid-three-age" min="0" max="60" placeholder="Age">
+
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
         <option value="biological">Biological</option> 
@@ -492,10 +493,10 @@
   </div>
     <div class="hide">
       <div id="kid-four">
-      <label for="fourth-kid-name">Child 4 </label>
-      <input type="text" onkeypress="return noenter()" name="kid-four" id="kid-four" placeholder="Name">
-      <label for="kid-four-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-four-age" id="kid-four-age" min="0" max="60">
+      <label for="fourth-kid-name" hidden="true">Child 4</label>
+      <input type="text" onkeypress="return noenter()" name="kid-four" id="kid-four" placeholder="Fourth">
+      <label for="kid-four-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-four-age" id="kid-four-age" min="0" max="60" placeholder="Age">
 
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
@@ -514,10 +515,10 @@
     </div>
     <div class="hide">
       <div id="kid-five">
-      <label for="fifth-kid-name">Child 5 </label>
-      <input type="text" onkeypress="return noenter()" name="kid-five" id="kid-five" placeholder="Name">
-      <label for="kid-five-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-five-age" id="kid-five-age" min="0" max="60">
+      <Child for="fifth-kid-name" hidden="true">Child 5</label>
+      <input type="text" onkeypress="return noenter()" name="kid-five" id="kid-five" placeholder="Fifth">
+      <label for="kid-five-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-five-age" id="kid-five-age" min="0" max="60" placeholder="Age">
 
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
@@ -536,10 +537,10 @@
     </div>
     <div class="hide">
       <div id="sixth-kid-name">
-      <label for="kid">Child 6 </label>
-      <input type="text" onkeypress="return noenter()" name="kid" id="kid" placeholder="Name">
-      <label for="kid-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60">
+      <label for="kid" hidden="true">Child 6</label>
+      <input type="text" onkeypress="return noenter()" name="kid" id="kid" placeholder="Sixth">
+      <label for="kid-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-age" id="kid-age" min="0" max="60" placeholder="Age">
 
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
@@ -558,10 +559,10 @@
     </div>
     <div class="hide">
       <div id="kid-seven">
-      <label for="seventh-kid-name">Child 7 </label>
-      <input type="text" onkeypress="return noenter()" name="kid-seven" id="kid-seven" placeholder="Name">
-      <label for="kid-seven-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-seven-age" id="kid-seven-age" min="0" max="60">
+      <label for="seventh-kid-name" hidden="true">Child 7</label>
+      <input type="text" onkeypress="return noenter()" name="kid-seven" id="kid-seven" placeholder="Seventh">
+      <label for="kid-seven-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-seven-age" id="kid-seven-age" min="0" max="60" placeholder="Age">
 
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
@@ -579,10 +580,10 @@
       </div>
     </div>
     <div class="hide"><div id="kid-eight">
-      <label for="eighth-kid-name">Child 8 </label>
-      <input type="text" onkeypress="return noenter()" name="kid-eight" id="kid-eight" placeholder="Name">
-      <label for="kid-eight-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-eight-age" id="kid-eight-age" min="0" max="60">
+      <label for="eighth-kid-name" hidden="true">Child 8</label>
+      <input type="text" onkeypress="return noenter()" name="kid-eight" id="kid-eight" placeholder="Eighth">
+      <label for="kid-eight-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-eight-age" id="kid-eight-age" min="0" max="60" placeholder="Age">
 
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>
@@ -600,10 +601,10 @@
       </div>
     </div>
     <div class="hide"><div id="kid-nine">
-      <label for="ninth-kid-name">Child 9 </label>
-      <input type="text" onkeypress="return noenter()" name="kid-nine" id="kid-nine" placeholder="Name">
-      <label for="kid-nine-age">Age</label>
-      <input type="number" onkeypress="return noenter()" name="kid-nine-age" id="kid-nine-age" min="0" max="60">
+      <label for="ninth-kid-name" hidden="true">Child 9</label>
+      <input type="text" onkeypress="return noenter()" name="kid-nine" id="kid-nine" placeholder="Ninth">
+      <label for="kid-nine-age" hidden="true">Age</label>
+      <input type="number" onkeypress="return noenter()" name="kid-nine-age" id="kid-nine-age" min="0" max="60" placeholder="Age">
 
       <select name="kidStatus" id="kidStatus">
         <option value="" disabled selected hidden >Select</option>

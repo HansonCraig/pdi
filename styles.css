@@ -142,7 +142,7 @@ input[type='tel']:focus {
 }
 
 input[type='number'] {
-	width: 3.5%;
+	width: 2.7rem;
 	margin: 0.4rem;
 }
 
@@ -372,6 +372,7 @@ input[type='text'] {
 #numberOfChildren {
 	margin-left: 1rem;
 }
+
 .chronic-description {
 	opacity: 0;
 	max-height: 0;

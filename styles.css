@@ -522,7 +522,7 @@ input {
 		height: 95%;
 		margin-left: 2rem;
 	}
-	.pdi-form {
+	#pdi-form {
 		height: 100vh;
 		margin-bottom: 20px;
 		margin-left: 2rem;
@@ -534,7 +534,7 @@ input {
 		height: 95%;
 		margin-left: 2rem;
 	}
-	.pdi-form {
+	#pdi-form {
 		transform: scale(0.5);
 		height: 100vh;
 		margin-left: 2rem;

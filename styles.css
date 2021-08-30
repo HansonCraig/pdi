@@ -1,8 +1,8 @@
 /*base form styles */
 
 * {
-	font-size: 16px;
-	border-radius: 6px;
+	/* font-size: 1.05rem; */
+	border-radius: 0.3rem;
 }
 
 .aligned label,
@@ -25,6 +25,12 @@ input[type='text']:focus {
 select:focus {
 	outline: none;
 	transform: scale(1.06);
+}
+
+textarea {
+	height: 6rem;
+	width: 48.5rem;
+	/* margin-bottom: 1rem; */
 }
 
 textarea:focus {
@@ -172,14 +178,10 @@ label[for='female'] {
 	border-radius: 1rem;
 }
 
-.menstrual-difficulties:focus {
-	background-color: #ead3d7;
-	transform: scale(1.04);
-}
-
-.husband-in-favor-textarea:focus {
-	background-color: #ead3d7;
-	transform: scale(1.04);
+.women-only textarea {
+	height: 6rem;
+	width: 48.5rem;
+	background-color: #ffb6c1;
 }
 
 .education select {
@@ -462,11 +464,15 @@ input {
 
 .problems {
 	column-count: 3;
-	margin: 2rem;
+	margin: 2rem 5rem;
 }
 
 .problems input[type='number'] {
 	width: 2rem;
+}
+
+.problems input[type='text'] {
+	width: 5rem;
 }
 
 .referral-aligned label,

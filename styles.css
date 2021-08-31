@@ -1,7 +1,6 @@
 /*base form styles */
 
 * {
-	/* font-size: 1.05rem; */
 	border-radius: 0.3rem;
 }
 
@@ -28,9 +27,9 @@ select:focus {
 }
 
 textarea {
-	height: 6rem;
+	height: 5.5rem;
 	width: 48.5rem;
-	/* margin-bottom: 1rem; */
+	margin-bottom: 1rem;
 }
 
 textarea:focus {

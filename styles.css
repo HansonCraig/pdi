@@ -4,14 +4,68 @@
 	border-radius: 0.3rem;
 }
 
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #111f41;
+	color: #fff;
+	font-weight: bold;
+}
+
+.logo {
+	display: flex;
+	margin: 3rem auto 0 auto;
+	max-width: 10rem;
+}
+
+.title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+#flex-pdi-form {
+	display: flex;
+	justify-content: center;
+}
+
+#flex-pdi-form-1 {
+	width: 2rem;
+}
+
+#flex-pdi-form-3 {
+	width: 2rem;
+}
+
+/* form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+} */
+
+.aligned {
+	display: flex;
+	justify-content: center;
+}
+
+.aligned-flex-1 {
+	width: 2rem;
+}
+
+.aligned-flex-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.aligned-flex-3 {
+	width: 2rem;
+}
+
 .aligned label,
 input {
-	/* to define widths */
 	display: inline-block;
 }
 
 .aligned label {
-	width: 5.5rem;
+	min-width: 5.5rem;
 	/* Positions the label text beside the input */
 	text-align: right;
 }
@@ -27,9 +81,11 @@ select:focus {
 }
 
 textarea {
-	height: 5.5rem;
+	height: 6rem;
 	width: 48.5rem;
-	margin-bottom: 1rem;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.2rem;
 }
 
 textarea:focus {
@@ -42,42 +98,16 @@ hr {
 	border-radius: 1rem;
 }
 
-.logo {
-	display: block;
-	margin: 3rem auto 0 auto;
-	max-width: 10rem;
-}
-
-.title {
-	font-size: 2rem;
-	text-align: center;
-}
-
 h3 {
-	display: block;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.25rem;
 }
 
 h2 {
-	display: block;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.5rem;
-}
-
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	background-color: #111f41;
-	color: #fff;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-}
-
-header {
-	padding: 5rem;
 }
 
 input[type='text'] {
@@ -139,14 +169,6 @@ input[type='radio'] {
 	cursor: pointer;
 }
 
-input[type='submit'] {
-	width: 6rem;
-	margin: auto;
-	display: block;
-	padding: 1rem;
-	cursor: pointer;
-}
-
 .sex-radios {
 	margin-left: 6.5rem;
 }
@@ -167,7 +189,7 @@ label[for='female'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 550px;
+	margin-bottom: 35rem;
 	width: 49rem;
 	color: lightpink;
 }
@@ -180,7 +202,6 @@ label[for='female'] {
 .women-only textarea {
 	height: 6rem;
 	width: 48.5rem;
-	background-color: #ffb6c1;
 }
 
 .education select {
@@ -193,7 +214,7 @@ label[for='female'] {
 	transform: scale(1.06);
 }
 .siblings {
-	margin-bottom: 40px;
+	margin-bottom: 1rem;
 }
 
 label[for='yes-siblings'],
@@ -206,7 +227,7 @@ label[for='no-siblings'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 170px;
+	margin-bottom: 10rem;
 }
 
 .siblings-order {
@@ -262,18 +283,7 @@ label[for='no-married'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	max-height: 70rem;
-}
-
-.aligned {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.aligned-flex-2 {
-	display: flex;
-	flex-direction: column;
+	max-height: 72rem;
 }
 
 .aligned-spouse label,
@@ -297,6 +307,10 @@ input {
 	margin-left: 1.5rem;
 }
 
+.previously-married {
+	margin-bottom: 1rem;
+}
+
 .previously-married-description {
 	margin-top: 1rem;
 	opacity: 0;
@@ -316,6 +330,10 @@ input {
 	overflow: visible;
 }
 
+.separated {
+	margin-bottom: 1rem;
+}
+
 .separated-description {
 	margin-top: 1rem;
 	opacity: 0;
@@ -331,6 +349,10 @@ input {
 	opacity: 1;
 	max-height: 120px;
 	overflow: visible;
+}
+
+.divorce {
+	margin-bottom: 1rem;
 }
 
 .filed-for-divorce-description {
@@ -473,8 +495,11 @@ input {
 }
 
 .problems {
-	column-count: 3;
-	margin: 2rem 5rem;
+	/* column-count: 3; */
+	/* margin: 2rem 5rem; */
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .problems input[type='number'] {
@@ -482,7 +507,7 @@ input {
 }
 
 .problems input[type='text'] {
-	width: 5rem;
+	width: 4rem;
 }
 
 .referral-aligned label,
@@ -503,8 +528,12 @@ input {
 	max-width: 20rem;
 }
 
-.submit {
-	padding: 10px 50px;
+input[type='submit'] {
+	width: 6rem;
+	margin: auto;
+	display: block;
+	padding: 1rem;
+	cursor: pointer;
 }
 
 .hide {

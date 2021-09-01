@@ -702,16 +702,16 @@ Have you ever used drugs for anything other than medical purposes?
 
       <label for="non-medical-drugs-no">No</label>
     
-      <div class="non-medical-drugs-yes">
+  <div class="non-medical-drugs-yes">
     <input type="radio" onkeypress="return noenter()" name="non-medical-drugs" id="non-medical-drugs-yes" value="non-medical-drugs-yes"> 
     <label for="non-medical-drugs-yes">Yes</label>
-    <br>
-    <br>
+      <br>
+      <br>
     <div class="non-medical-explanation">Please explain:
       <br>
       <br>
-        <textarea name="non-medical-explanation" id="non-medical-explanation" cols="90" rows="4"></textarea>
-      </div>
+        <textarea name="non-medical-explanation" id="non-medical-explanation"></textarea>
+    </div>
   </div>
 
 <div>Have you ever been arrested?
@@ -725,7 +725,7 @@ Have you ever used drugs for anything other than medical purposes?
   
 </div>
 <br>
-<div>Do you drink alcoholic beverages?
+<div class="alcohol">Do you drink alcoholic beverages?
   <br>
   <br>
   <input type="radio" onkeypress="return noenter()" name="alcohol" id="alcohol-no" value="alcohol-no">
@@ -739,8 +739,8 @@ Have you ever used drugs for anything other than medical purposes?
     How frequently and how much?
   <br>
   <br>
-    <textarea  name="alcohol-explanation" id="alcohol-explanation" cols="90" rows="4"></textarea>  
-    <br>
+    <textarea  name="alcohol-explanation" id="alcohol-explanation"></textarea>  
+
   </div>
   </div>
 </div>
@@ -760,11 +760,12 @@ Have you ever used drugs for anything other than medical purposes?
     <br>
     <br>
          <textarea name="caffeine-explanation" id="caffeine-explanation" cols="90" rows="4"></textarea>
+         <br>
        </div> 
 </div>
 <br>
   </div>
-      <!-- <br> -->
+      <br>
   <div>Do you smoke?
     <br>
     <br>

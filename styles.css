@@ -413,6 +413,10 @@ input[type='text'] {
 	margin-bottom: 160px;
 }
 
+/* .alcohol {
+	margin-bottom: 2rem;
+} */
+
 .alcohol-explanation {
 	opacity: 0;
 	max-height: 0;
@@ -423,7 +427,7 @@ input[type='text'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 120px;
+	margin-bottom: 140px;
 }
 
 .caffeine-explanation {
@@ -449,7 +453,7 @@ input[type='text'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 120px;
+	margin-bottom: 140px;
 }
 
 .emotional-explanation {
@@ -462,7 +466,7 @@ input[type='text'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 120px;
+	margin-bottom: 140px;
 }
 
 .psychiatrist-explanation {
@@ -475,7 +479,7 @@ input[type='text'] {
 	opacity: 1;
 	overflow: visible;
 	height: auto;
-	margin-bottom: 120px;
+	margin-bottom: 140px;
 }
 
 .issues-indication {
